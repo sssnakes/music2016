@@ -13,11 +13,10 @@
   width: 100%;
   display: block;
   position: relative;
-  top: -300px;
+  top: -365px;
 }
 
 .h-tip {
-  background-color: red;
   width: 100%;
   height: auto;
   padding: 50px;
