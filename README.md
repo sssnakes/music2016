@@ -9,3 +9,7 @@ Music listing site for 2016, mainly to teach myself some PHP and to use Github m
 
 0.02
 - .list-title not entirely fixed :/
+
+0.10
+- Had a new design idea whilst on holiday, starting fresh with a few retainers.
+
