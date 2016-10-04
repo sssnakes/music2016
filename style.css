@@ -5,62 +5,17 @@
   src:  url('fonts/sporting_grotesque.otf') format('opentype');
 }
 
+@font-face {
+  font-family: 'Work';
+  src: url('fonts/WorkSans-Regular.ttf') format('truetype');
+}
+
 * {
   margin: 0;
   padding: 0;
-  font-family:  Arial, sans-serif;
+  font-family:  'Work', Arial, sans-serif;
 
-  font-size: 28px; /*CHANGE LATER*/
-  letter-spacing: 1.5px;
 }
 html{
-  background-color: #FFFD38;
-}
-.contents{
-  background-color: #fff;
-}
-.h-banner{
-  background-color: #FFFD38;
-  height: 500px;
-  width: 100%;
-  display: block;
-  position: relative;
-}
-.h-tip {
-  width: 100%;
-  height: auto;
-  padding: 40px;
-  bottom: 0;
-  position: absolute;
-}
-.h-info{
-  padding: 40px;
-  width: 70%;
-}
-.slide-wrap {
-  top: -385px;
-  position: relative;
-}
-.splitter{
-  height: 2px;
-  width: 100%;
-  background: #000;
-}
-.list{
-  padding: 40px;
-  line-height: 42px;
-}
-.list-title p{
-  font-size: 18px;
-  text-transform: uppercase;
-  font-weight: bold;
-  float: right;
-  text-align: center;
-  transform: translateX(50%) translateY(200%) rotate(90deg);
-}
-li{
-  list-style-type: none;
-}
-li span{
-  font-style: italic;
+
 }
