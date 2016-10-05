@@ -14,8 +14,43 @@
   margin: 0;
   padding: 0;
   font-family:  'Work', Arial, sans-serif;
-
 }
 html{
 
+}
+
+.container{
+  
+}
+
+/*LEFT SCROLLBAR CSS*/
+.scroll-bar-container{
+  height: 100vh;
+  width: 350px;
+  background-color: #D1E0E2;
+  display: inline-block;
+  z-index: 5;
+}
+
+.right-m-container{
+  width: calc(70vw + 750px);
+  position: absolute;
+  left: 150px;
+  display: inline-block;
+}
+
+.list-master-container{
+  height: 100vh;
+  width: 70vw;
+  background-color: #fff;
+  display: inline-block;
+  z-index: 10;
+  position: absolute;
+}
+
+.info-slide{
+  height: 100vh;
+  width: 750px;
+  background-color: #2F51D7;
+  float: right;
 }
