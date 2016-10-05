@@ -14,13 +14,20 @@
   margin: 0;
   padding: 0;
   font-family:  'Work', Arial, sans-serif;
+  font-size: 20px;
 }
 html{
-
+  background-color: #FFFD38;
 }
 
 .container{
-  
+ position: absolute;
+ width: 100vh;
+ height: 100vh;
+}
+
+.sport{
+  font-family: 'Sport', sans-serif;
 }
 
 /*LEFT SCROLLBAR CSS*/
@@ -53,4 +60,50 @@ html{
   width: 750px;
   background-color: #2F51D7;
   float: right;
+}
+.info-button{
+  display: inline-block;
+  left: 26px;
+  position: absolute;
+  bottom: 34px;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 14px;
+}
+
+
+.list-master-container{
+  height: 100vh;
+  overflow: scroll;
+  position: absolute;
+}
+.track-list{
+}
+.track-list ol{
+  list-style-type: none;
+}
+.track-list ol li{
+  padding: 20px 0 20px 50px;
+  font-size: 2em;
+  cursor: pointer;
+}
+.track-list ol li:hover{
+  background-color: #FEFECD;
+  transition: .5s;
+}
+
+.cover-albums{
+  height: 100vh;
+}
+.cover-albums p{
+  text-align: center;
+  font-size: 4em;
+  text-transform: uppercase;
+  position: relative;;
+}
+.cover-text-top{
+  top: 20px;
+}
+.cover-text-bottom{
+  bottom: 20px;
 }
