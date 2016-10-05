@@ -19,11 +19,21 @@
 html{
   background-color: #FFFD38;
 }
-
+svg{
+  position: absolute;
+}
 .container{
  position: absolute;
- width: 100vh;
+ width: 100vw;
  height: 100vh;
+ overflow: hidden;
+}
+.inner-container-slider{
+  width: calc(70% + 750px);
+  height: 100vh;
+  position: absolute;
+  /*left: 150px;*/
+  display: inline-block;
 }
 
 .sport{
@@ -39,13 +49,6 @@ html{
   z-index: 5;
 }
 
-.right-m-container{
-  width: calc(70vw + 750px);
-  position: absolute;
-  left: 150px;
-  display: inline-block;
-}
-
 .list-master-container{
   height: 100vh;
   width: 70vw;
@@ -59,7 +62,9 @@ html{
   height: 100vh;
   width: 750px;
   background-color: #2F51D7;
-  float: right;
+  right: 0;
+  position: absolute;
+  z-index: 100;
 }
 .info-button{
   display: inline-block;
@@ -92,6 +97,12 @@ html{
 .track-list ol li:hover{
   background-color: #FEFECD;
   transition: .5s;
+}
+.track-list ol li:first-child{
+  padding: 30px 0 20px 50px;
+}
+.track-list ol li:last-child{
+  padding: 20px 0 30px 50px;
 }
 
 .cover-albums{

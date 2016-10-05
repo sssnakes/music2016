@@ -15,3 +15,9 @@ Music listing site for 2016, mainly to teach myself some PHP and to use Github m
 
 0.12
 - List Scroll working (mostly). Right side panel still needs absolute position fixing. Left side panel works well. Attempted Info bottom panel but went real bad, try again soon.
+
+0.13
+- Vector Disk added, looks nice.
+
+0.14
+- Horizontal sliders working well. No window-resizing debug in place yet, but works on first load.
