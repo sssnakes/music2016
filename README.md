@@ -21,3 +21,6 @@ Music listing site for 2016, mainly to teach myself some PHP and to use Github m
 
 0.14
 - Horizontal sliders working well. No window-resizing debug in place yet, but works on first load.
+
+0.15
+- Fixed the relative positioning of the text on the Covers.
