@@ -23,4 +23,4 @@ Music listing site for 2016, mainly to teach myself some PHP and to use Github m
 - Horizontal sliders working well. No window-resizing debug in place yet, but works on first load.
 
 0.15
-- Fixed the relative positioning of the text on the Covers.
+- Album art appears now on hover. Fixed bug with art clipping under other slides by moving them outside primary divs, maybe a cleaner solution later? Beginning some trial content on the right hand slide too.

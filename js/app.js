@@ -14,19 +14,16 @@ $(document).ready(function() {
 
   var winWid  = $(window).width();
   var set     = (winWid - (900 + (winWid * 0.70)));
-  console.log(set);
 
   // SET SLIDER POSITION
   $('.inner-container-slider').css('right', set + 'px');
 
   // HOVER SLIDE, LEFT CONTAINER
   $('.scroll-bar-container').mouseenter(function() {
-    console.log('run');
     $('.inner-container-slider').animate({
       right: set - 150
     }, 200, function(){} );
   }).mouseleave(function() {
-      console.log('end');
     $('.inner-container-slider').animate({
       right: set
     }, 200, function(){} );
@@ -34,16 +31,26 @@ $(document).ready(function() {
 
   // HOVER SLIDE, RIGHT CONTAINER
   $('.info-slide').mouseenter(function() {
-    console.log('run2');
     $('.inner-container-slider').animate({
       right: 0
     }, 200, function(){} );
   }).mouseleave(function() {
-      console.log('end2');
     $('.inner-container-slider').animate({
       right: set
     }, 200, function(){} );
   });
 
+  // DISPLAY ALBUM ART
+  $('.hover-text').mousemove(function(e) {
+      $art = $("#" + $(this).data('image-id'))
+      $art.stop(1, 1).show();
+      $art.offset({
+          top: e.pageY + 20,
+          left: e.pageX + 10
+      });
+  }).mouseleave(function() {
+      $art = $("#" + $(this).data('image-id'))
+      $art.hide();
+  });
 
 });

@@ -5,9 +5,8 @@
   <meta name="application-name"     content="Music 2016">
   <meta name="viewport"             content="width=device-width, initial-scale=1.0">
 
-  <script src="js/jquery-2.2.0.min.js"></script>
-
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="js/jquery-2.2.0.min.js"></script>
   <script type="text/javascript" src="./js/app.js"></script>
 
 </head>
@@ -39,15 +38,17 @@
             <p class="cover-text-bottom sport">Top Albums</p>
           </div>
 
+
+
           <div class="track-list">
             <ol>
-              <li>Xiu Xiu - Plays Music from Twin Peaks</li>
-              <li>Badbadnotgood - IV</li>
-              <li>The Gloaming - 2</li>
-              <li>Disasterpeace - Hyper Light Drifter</li>
-              <li>Liima - ii</li>
-              <li>Street Sects - End Positon</li>
-              <li>Floex (Thomas Dvorak) - Samorost 3</li>
+              <li class="hover-text" data-image-id="xiu">Xiu Xiu - Plays Music from Twin Peaks </li>
+              <li class="hover-text" data-image-id="bad">Badbadnotgood - IV </li>
+              <li class="hover-text" data-image-id="glo">The Gloaming - 2 </li>
+              <li class="hover-text" data-image-id="dis">Disasterpeace - Hyper Light Drifter</li>
+              <li class="hover-text" data-image-id="lii">Liima - ii</li>
+              <li class="hover-text" data-image-id="str">Street Sects - End Positon</li>
+              <li class="hover-text" data-image-id="flo">Floex (Thomas Dvorak) - Samorost 3</li>
             </ol>
           </div>
 
@@ -67,14 +68,14 @@
 
           <div class="track-list">
             <ol>
-              <li>Avalanches - Wildflower</li>
-              <li>case/lang/veirs - case/lang/veirs</li>
-              <li>Matmos - Ultimate Care</li>
-              <li>CFCF - On Vacation</li>
-              <li>Carlos Nino &amp; Friends - Flutes, Echos, It's All Happening!</li>
-              <li>Death Grips - Bottomless Pit</li>
-              <li>Mammal Hands - Floa</li>
-              <li>Bon Iver - 22, A Million</li>
+              <li class="hover-text" data-image-id="ava">Avalanches - Wildflower</li>
+              <li class="hover-text" data-image-id="cas">case/lang/veirs - case/lang/veirs</li>
+              <li class="hover-text" data-image-id="mat">Matmos - Ultimate Care II</li>
+              <li class="hover-text" data-image-id="cfc">CFCF - On Vacation</li>
+              <li class="hover-text" data-image-id="nin">Carlos Nino &amp; Friends - Flutes, Echos, It's All Happening!</li>
+              <li class="hover-text" data-image-id="dgr">Death Grips - Bottomless Pit</li>
+              <li class="hover-text" data-image-id="mam">Mammal Hands - Floa</li>
+              <li class="hover-text" data-image-id="bon">Bon Iver - 22, A Million</li>
             </ol>
           </div>
 
@@ -82,10 +83,40 @@
 
       <div class="info-slide">
 
+<!-- TO BE REPLACED WITH PHP AJAX FILLS -->
+
+        <p class="sport info-title-1">Street Sects</p>
+        <p class="sport info-title-2">End Position</p>
+
+        <iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/f7buxWtIPDM" frameborder="0" allowfullscreen></iframe>
+
+
+
+<!-- END HERE -->
+
       </div>
 
     </div>
 </div>
+
+<!-- ALBUM ARTS -->
+
+<img id="xiu" src="./imgs/best/xiu.jpg" class="mouse-hovered art">
+<img id="bad" src="./imgs/best/bad.jpg" class="mouse-hovered art">
+<img id="glo" src="./imgs/best/glo.jpg" class="mouse-hovered art">
+<img id="dis" src="./imgs/best/dis.jpg" class="mouse-hovered art">
+<img id="lii" src="./imgs/best/lii.jpg" class="mouse-hovered art">
+<img id="str" src="./imgs/best/str.jpg" class="mouse-hovered art">
+<img id="flo" src="./imgs/best/flo.jpg" class="mouse-hovered art">
+
+<img id="ava" src="./imgs/honorable/ava.jpg" class="mouse-hovered art">
+<img id="cas" src="./imgs/honorable/cas.jpg" class="mouse-hovered art">
+<img id="mat" src="./imgs/honorable/mat.jpg" class="mouse-hovered art">
+<img id="cfc" src="./imgs/honorable/cfc.jpg" class="mouse-hovered art">
+<img id="nin" src="./imgs/honorable/nin.jpg" class="mouse-hovered art">
+<img id="dgr" src="./imgs/honorable/dgr.jpg" class="mouse-hovered art">
+<img id="mam" src="./imgs/honorable/mam.jpg" class="mouse-hovered art">
+<img id="bon" src="./imgs/honorable/bon.jpg" class="mouse-hovered art">
 
 </body>
 </html>

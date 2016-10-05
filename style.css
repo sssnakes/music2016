@@ -19,6 +19,9 @@
 html{
   background-color: #FFFD38;
 }
+::selection{
+  background-color: red;
+}
 svg{
   position: absolute;
 }
@@ -58,6 +61,8 @@ svg{
   position: absolute;
 }
 
+
+/*INFO SLIDE CSS*/
 .info-slide{
   height: 100vh;
   width: 750px;
@@ -65,6 +70,8 @@ svg{
   right: 0;
   position: absolute;
   z-index: 100;
+  padding: 50px 70px 50px 70px;
+  box-sizing: border-box;
 }
 .info-button{
   display: inline-block;
@@ -74,6 +81,18 @@ svg{
   font-size: 20px;
   text-transform: uppercase;
   padding: 14px;
+}
+.info-title-1{
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
+.info-title-2{
+  margin: 10px 0 0 0;
+  font-size: 2.8em;
+}
+.youtube{
+  margin: 40px auto;
+  display: block;
 }
 
 
@@ -96,13 +115,16 @@ svg{
 }
 .track-list ol li:hover{
   background-color: #FEFECD;
-  transition: .5s;
+  transition: .2s;
 }
 .track-list ol li:first-child{
   padding: 30px 0 20px 50px;
 }
 .track-list ol li:last-child{
   padding: 20px 0 30px 50px;
+}
+.track-list ol li:active{
+  color: #FEFECD;
 }
 
 .cover-albums{
@@ -123,4 +145,18 @@ svg{
 }
 .cover-text-bottom{
   bottom: 20px;
+}
+
+
+img.mouse-hovered {
+    display:none;
+    position: absolute;
+}
+
+.art{
+  z-index: 1000;
+  width: 250px;
+  height: 250px;
+  background-color: #fff;
+  box-shadow: 0px 0px 15px #666;
 }
