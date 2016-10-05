@@ -81,6 +81,8 @@ html{
 }
 .track-list ol{
   list-style-type: none;
+  border-top: #000 solid 2px;
+  border-bottom: #000 solid 2px;
 }
 .track-list ol li{
   padding: 20px 0 20px 50px;
@@ -99,7 +101,10 @@ html{
   text-align: center;
   font-size: 4em;
   text-transform: uppercase;
-  position: relative;;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
 }
 .cover-text-top{
   top: 20px;
