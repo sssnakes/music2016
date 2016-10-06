@@ -26,4 +26,7 @@ Music listing site for 2016, mainly to teach myself some PHP and to use Github m
 - Album art appears now on hover. Fixed bug with art clipping under other slides by moving them outside primary divs, maybe a cleaner solution later? Beginning some trial content on the right hand slide too.
 
 0.16
-- Clicking on albums now alters the .info-slide to the corresponding colour.
+- Clicking on albums now alters the .info-slide to the corresponding colour. Added jQuery.color.js to allow.
+
+0.17
+- Left side is working now with the text animating in, pleased with the effect. Scrolling to sections has also been implemented, but when duplicates of the first two sections are added, it’s causing a weird effect for the scroll on multiple clicks… Need to look into later. End star also added.

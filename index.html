@@ -15,17 +15,36 @@
 
 <div class="container">
 
-    <div class="scroll-bar-container">
+    <div class="left-bar-container">
+
+      <div class="scroll-bar">
+        <div class="scroll-thread"></div>
+        <div id="scroll-1" class="scroll-button">
+          <div class="scroll-text sport">Top</br>Albums</div>
+        </div>
+        <div id="scroll-2" class="scroll-button">
+            <div class="scroll-text sport">Honorable</br>Mentions</div>
+        </div>
+        <div id="scroll-3" class="scroll-button">
+            <div class="scroll-text sport">Top LPs &amp;</br>Singles</div>
+        </div>
+        <div id="scroll-4" class="scroll-button">
+            <div class="scroll-text sport">Revisits</div>
+        </div>
+      </div>
+
       <div class="info-button sport sport-small">
         Info
       </div>
+
     </div>
 
     <div class="inner-container-slider">
 
       <div class="list-master-container">
 
-          <div class="cover cover-albums">
+          <!-- BEST ALBUMS -->
+          <div id="cover1" class="cover cover-albums">
             <p class="cover-text-top sport">Music 2016</p>
 
             <svg width="100%" height="100%">
@@ -53,7 +72,8 @@
             </ol>
           </div>
 
-          <div class="cover cover-albums">
+          <!-- HONORABLE MENTIONS -->
+          <div id="cover2" class="cover cover-albums">
             <p class="cover-text-top sport">Music 2016</p>
 
             <svg width="100%" height="100%">
@@ -79,7 +99,79 @@
             </ol>
           </div>
 
-      </div>
+          <!-- TOP SINGLES -->
+          <div id="cover3" class="cover cover-albums">
+            <p class="cover-text-top sport">Music 2016</p>
+
+            <svg width="100%" height="100%">
+               <circle cx="50%" cy="50%" r="20%" stroke="#000" stroke-width="2" fill="none"></circle>
+            </svg>
+
+            <svg width="100%" height="100%">
+               <circle cx="50%" cy="50%" r="1%" stroke="#000" stroke-width="2" fill="none"></circle>
+            </svg>
+
+            <p class="cover-text-bottom sport">Top LPs &amp; Singles</p>
+          </div>
+
+          <div class="track-list">
+            <ol>
+              <li class="list-link" data-image-id="ava" data-bg="2F78B8">Avalanches - Wildflower</li>
+              <li class="list-link" data-image-id="cas" data-bg="FC5922">case/lang/veirs - case/lang/veirs</li>
+              <li class="list-link" data-image-id="mat" data-bg="76D47A">Matmos - Ultimate Care II</li>
+              <li class="list-link" data-image-id="cfc" data-bg="66A0A8">CFCF - On Vacation</li>
+              <li class="list-link" data-image-id="nin" data-bg="CE5788">Carlos Nino &amp; Friends - Flutes, Echos, It's All Happening!</li>
+              <li class="list-link" data-image-id="dgr" data-bg="C7D4CB">Death Grips - Bottomless Pit</li>
+              <li class="list-link" data-image-id="mam" data-bg="E2C08D">Mammal Hands - Floa</li>
+            </ol>
+          </div>
+
+          <!-- REVISITS -->
+          <div id="cover4" class="cover cover-albums">
+            <p class="cover-text-top sport">Music 2016</p>
+
+            <svg width="100%" height="100%">
+               <circle cx="50%" cy="50%" r="20%" stroke="#000" stroke-width="2" fill="none"></circle>
+            </svg>
+
+            <svg width="100%" height="100%">
+               <circle cx="50%" cy="50%" r="1%" stroke="#000" stroke-width="2" fill="none"></circle>
+            </svg>
+
+            <p class="cover-text-bottom sport">Revisits</p>
+          </div>
+
+          <div class="track-list">
+            <ol>
+              <li class="list-link" data-image-id="ava" data-bg="2F78B8">Avalanches - Wildflower</li>
+              <li class="list-link" data-image-id="cas" data-bg="FC5922">case/lang/veirs - case/lang/veirs</li>
+              <li class="list-link" data-image-id="mat" data-bg="76D47A">Matmos - Ultimate Care II</li>
+              <li class="list-link" data-image-id="cfc" data-bg="66A0A8">CFCF - On Vacation</li>
+              <li class="list-link" data-image-id="nin" data-bg="CE5788">Carlos Nino &amp; Friends - Flutes, Echos, It's All Happening!</li>
+              <li class="list-link" data-image-id="dgr" data-bg="C7D4CB">Death Grips - Bottomless Pit</li>
+              <li class="list-link" data-image-id="mam" data-bg="E2C08D">Mammal Hands - Floa</li>
+            </ol>
+          </div>
+
+          <div class="list-end">
+              <svg class="end-star" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              	 viewBox="0 0 33.769 39.917" enable-background="new 0 0 33.769 39.917" xml:space="preserve">
+              <g>
+              	<g>
+              		<defs>
+              			<rect id="SVGID_1_" x="0.551" y="1.102" width="32.667" height="38.458"/>
+              		</defs>
+              		<clipPath id="SVGID_2_">
+              			<use xlink:href="#SVGID_1_"  overflow="visible"/>
+              		</clipPath>
+              		<path clip-path="url(#SVGID_2_)" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M1.07,29.945
+              			l31.627-19.229 M1.07,10.716l31.627,19.229 M16.883,1.102V39.56"/>
+              	</g>
+              </g>
+              </svg>
+          </div>
+
+      </div> <!-- END OF CONTAINER -->
 
       <div class="info-slide">
 
@@ -93,7 +185,7 @@
         <div class="notes-title sport sport-small">My Notes</div>
         <div class="notes-box">
           <p class="finn-notes">
-            Fuck yes, angry music. These guys certainly filled my Death Grips void of the past couple albums from them. And what an opening song to blare out to. Featherweight Hate is a great banger too.
+            Fuck yes, angry music. These guys certainly filled my Death Grips void of the past couple albums from them. And what an opening song to blare out to. Featherweight Hate is great too.
             </br></br>
             Fresh and nasty.
           </p>

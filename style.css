@@ -52,13 +52,44 @@ ol{
 }
 
 /*LEFT SCROLLBAR CSS*/
-.scroll-bar-container{
+.left-bar-container{
   height: 100vh;
   width: 350px;
   background-color: #D1E0E2;
   display: inline-block;
   z-index: 5;
 }
+.scroll-bar{
+  height: 90%;
+  position: relative;
+}
+.scroll-button{
+  width: 100%;
+  height: 25%;
+  display: inline-block;
+  position: relative;
+}
+.scroll-button:hover{
+
+}
+.scroll-thread{
+  background-color: #000;
+  height: 90%;
+  margin: 10% 0;
+  box-sizing: border-box;
+  width: 2px;
+  left: 75px;
+  position: absolute;
+  display: inline-block;
+}
+.scroll-text{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 150px;
+}
+
+
 
 .list-master-container{
   height: 100vh;
@@ -69,6 +100,18 @@ ol{
   position: absolute;
 }
 
+.list-end{
+  width: 100%;
+  height: 50px;
+  margin: 100px auto;
+  box-sizing: border-box;
+  position: relative;
+}
+.end-star{
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
 /*INFO SLIDE CSS*/
 .info-slide{
@@ -83,12 +126,13 @@ ol{
   overflow-y: scroll;
 }
 .info-button{
+  width: 100%;
+  height: 10vh;
   display: inline-block;
-  left: 22px;
   position: absolute;
-  bottom: 34px;
   text-transform: uppercase;
-  padding: 14px;
+  padding: 36px 36px 36px 46px;
+  box-sizing: border-box;
 }
 .info-title{
   margin: 10px 0 0 0;
