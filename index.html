@@ -7,6 +7,7 @@
 
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="js/jquery-2.2.0.min.js"></script>
+  <script src="js/jquery.color.js"></script>
   <script type="text/javascript" src="./js/app.js"></script>
 
 </head>
@@ -15,7 +16,7 @@
 <div class="container">
 
     <div class="scroll-bar-container">
-      <div class="info-button sport">
+      <div class="info-button sport sport-small">
         Info
       </div>
     </div>
@@ -42,13 +43,13 @@
 
           <div class="track-list">
             <ol>
-              <li class="hover-text" data-image-id="xiu">Xiu Xiu - Plays Music from Twin Peaks </li>
-              <li class="hover-text" data-image-id="bad">Badbadnotgood - IV </li>
-              <li class="hover-text" data-image-id="glo">The Gloaming - 2 </li>
-              <li class="hover-text" data-image-id="dis">Disasterpeace - Hyper Light Drifter</li>
-              <li class="hover-text" data-image-id="lii">Liima - ii</li>
-              <li class="hover-text" data-image-id="str">Street Sects - End Positon</li>
-              <li class="hover-text" data-image-id="flo">Floex (Thomas Dvorak) - Samorost 3</li>
+              <li class="list-link" data-image-id="xiu" data-bg="E92638">Xiu Xiu - Plays Music from Twin Peaks </li>
+              <li class="list-link" data-image-id="bad" data-bg="5F9CCE">Badbadnotgood - IV </li>
+              <li class="list-link" data-image-id="glo" data-bg="817867">The Gloaming - 2 </li>
+              <li class="list-link" data-image-id="dis" data-bg="76517A">Disasterpeace - Hyper Light Drifter</li>
+              <li class="list-link" data-image-id="lii" data-bg="27DA3F">Liima - ii</li>
+              <li class="list-link" data-image-id="str" data-bg="656763">Street Sects - End Positon</li>
+              <li class="list-link" data-image-id="flo" data-bg="5EB769">Floex (Thomas Dvorak) - Samorost 3</li>
             </ol>
           </div>
 
@@ -68,14 +69,13 @@
 
           <div class="track-list">
             <ol>
-              <li class="hover-text" data-image-id="ava">Avalanches - Wildflower</li>
-              <li class="hover-text" data-image-id="cas">case/lang/veirs - case/lang/veirs</li>
-              <li class="hover-text" data-image-id="mat">Matmos - Ultimate Care II</li>
-              <li class="hover-text" data-image-id="cfc">CFCF - On Vacation</li>
-              <li class="hover-text" data-image-id="nin">Carlos Nino &amp; Friends - Flutes, Echos, It's All Happening!</li>
-              <li class="hover-text" data-image-id="dgr">Death Grips - Bottomless Pit</li>
-              <li class="hover-text" data-image-id="mam">Mammal Hands - Floa</li>
-              <li class="hover-text" data-image-id="bon">Bon Iver - 22, A Million</li>
+              <li class="list-link" data-image-id="ava" data-bg="2F78B8">Avalanches - Wildflower</li>
+              <li class="list-link" data-image-id="cas" data-bg="FC5922">case/lang/veirs - case/lang/veirs</li>
+              <li class="list-link" data-image-id="mat" data-bg="76D47A">Matmos - Ultimate Care II</li>
+              <li class="list-link" data-image-id="cfc" data-bg="66A0A8">CFCF - On Vacation</li>
+              <li class="list-link" data-image-id="nin" data-bg="CE5788">Carlos Nino &amp; Friends - Flutes, Echos, It's All Happening!</li>
+              <li class="list-link" data-image-id="dgr" data-bg="C7D4CB">Death Grips - Bottomless Pit</li>
+              <li class="list-link" data-image-id="mam" data-bg="E2C08D">Mammal Hands - Floa</li>
             </ol>
           </div>
 
@@ -85,11 +85,34 @@
 
 <!-- TO BE REPLACED WITH PHP AJAX FILLS -->
 
-        <p class="sport info-title-1">Street Sects</p>
-        <p class="sport info-title-2">End Position</p>
+        <p class="sport sport-small">Street Sects</p>
+        <p class="sport info-title">End Position</p>
 
         <iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/f7buxWtIPDM" frameborder="0" allowfullscreen></iframe>
 
+        <div class="notes-title sport sport-small">My Notes</div>
+        <div class="notes-box">
+          <p class="finn-notes">
+            Fuck yes, angry music. These guys certainly filled my Death Grips void of the past couple albums from them. And what an opening song to blare out to. Featherweight Hate is a great banger too.
+            </br></br>
+            Fresh and nasty.
+          </p>
+        </div>
+
+        <div class="boring-container">
+          <ol class="boring-left">
+            <li>Label:</li>
+            <li>Release:</li>
+            <li>Genre:</li>
+            <li>Length:</li>
+          </ol>
+          <ol class="boring-right">
+            <li>The Flesner</li>
+            <li>16 Sept. 2016</li>
+            <li>Synth Noise-Punk, Angry</li>
+            <li></li>
+          </ol>
+        </div>
 
 
 <!-- END HERE -->
@@ -116,7 +139,6 @@
 <img id="nin" src="./imgs/honorable/nin.jpg" class="mouse-hovered art">
 <img id="dgr" src="./imgs/honorable/dgr.jpg" class="mouse-hovered art">
 <img id="mam" src="./imgs/honorable/mam.jpg" class="mouse-hovered art">
-<img id="bon" src="./imgs/honorable/bon.jpg" class="mouse-hovered art">
 
 </body>
 </html>

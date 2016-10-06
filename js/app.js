@@ -41,16 +41,25 @@ $(document).ready(function() {
   });
 
   // DISPLAY ALBUM ART
-  $('.hover-text').mousemove(function(e) {
-      $art = $("#" + $(this).data('image-id'))
+  $('.list-link').mousemove(function(e) {
+      $art = $("#" + $(this).data('image-id'));
       $art.stop(1, 1).show();
       $art.offset({
           top: e.pageY + 20,
           left: e.pageX + 10
       });
   }).mouseleave(function() {
-      $art = $("#" + $(this).data('image-id'))
+      $art = $("#" + $(this).data('image-id'));
       $art.hide();
   });
 
+  // CHANGE INFO BG COLOUR
+  $('.list-link').on('click', function(e) {
+    var bg = $(this).data('bg');
+    $('.info-slide').animate({ backgroundColor: ('#' + bg) }, 400);
+    $('.finn-notes').animate({ backgroundColor: ('#' + bg) }, 400);
+    $('.notes-title').animate({ backgroundColor: ('#' + bg) }, 400);
+  });
+
+// END
 });

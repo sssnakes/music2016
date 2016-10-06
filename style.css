@@ -25,6 +25,9 @@ html{
 svg{
   position: absolute;
 }
+ol{
+  list-style-type: none;
+}
 .container{
  position: absolute;
  width: 100vw;
@@ -41,6 +44,11 @@ svg{
 
 .sport{
   font-family: 'Sport', sans-serif;
+}
+.sport-small{
+  text-transform: uppercase;
+  font-size: 1em;
+  letter-spacing: 1px;
 }
 
 /*LEFT SCROLLBAR CSS*/
@@ -72,27 +80,59 @@ svg{
   z-index: 100;
   padding: 50px 70px 50px 70px;
   box-sizing: border-box;
+  overflow-y: scroll;
 }
 .info-button{
   display: inline-block;
-  left: 26px;
+  left: 22px;
   position: absolute;
   bottom: 34px;
-  font-size: 20px;
   text-transform: uppercase;
   padding: 14px;
 }
-.info-title-1{
-  font-size: 1.3em;
-  text-transform: uppercase;
-}
-.info-title-2{
+.info-title{
   margin: 10px 0 0 0;
   font-size: 2.8em;
 }
 .youtube{
   margin: 40px auto;
   display: block;
+}
+.notes-title{
+  background-color: #2F51D7;
+  z-index: 101;
+  display: inline-block;
+  position: relative;
+  top: 12px;
+  left: 15px;
+  padding: 0 5px;
+  text-transform: uppercase;
+}
+.finn-notes{
+  color: #fff;
+  border: 2px solid #000;
+  padding: 25px 15px;
+  background-color: #2F51D7;
+  box-shadow: 0px 0px 10px #000;
+}
+.boring-container{
+  width: 100%;
+  background-color: red;
+  margin: 50px 0;
+  line-height: 1.6;
+}
+.boring-left{
+  width: 22%;
+  display: inline-block;
+  float: left;
+}
+.boring-right{
+  width: 60%;
+  display: inline-block;
+  float: left;
+}
+.boring-right li{
+  font-family: 'Sport', sans-serif;
 }
 
 
@@ -104,7 +144,6 @@ svg{
 .track-list{
 }
 .track-list ol{
-  list-style-type: none;
   border-top: #000 solid 2px;
   border-bottom: #000 solid 2px;
 }

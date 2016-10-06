@@ -24,3 +24,6 @@ Music listing site for 2016, mainly to teach myself some PHP and to use Github m
 
 0.15
 - Album art appears now on hover. Fixed bug with art clipping under other slides by moving them outside primary divs, maybe a cleaner solution later? Beginning some trial content on the right hand slide too.
+
+0.16
+- Clicking on albums now alters the .info-slide to the corresponding colour.
