@@ -30,3 +30,6 @@ Music listing site for 2016, mainly to teach myself some PHP and to use Github m
 
 0.17
 - Left side is working now with the text animating in, pleased with the effect. Scrolling to sections has also been implemented, but when duplicates of the first two sections are added, it’s causing a weird effect for the scroll on multiple clicks… Need to look into later. End star also added.
+
+0.18 (Dial Save 1)
+- Scroll-to still not working correctly. Implemented part of the scroll dial, but I think the math was implemented incorrectly. Going to try again, hold on to this as a placeholder save.

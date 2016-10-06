@@ -65,9 +65,12 @@ ol{
 }
 .scroll-button{
   width: 100%;
-  height: 25%;
+  height: 15%;
+  margin: 12% 0;
+  box-sizing: border-box;
   display: inline-block;
   position: relative;
+  cursor: pointer;
 }
 .scroll-button:hover{
 
@@ -75,7 +78,7 @@ ol{
 .scroll-thread{
   background-color: #000;
   height: 90%;
-  margin: 10% 0;
+  margin: 12.5% 0;
   box-sizing: border-box;
   width: 2px;
   left: 75px;
@@ -88,7 +91,29 @@ ol{
   transform: translateY(-50%);
   left: 150px;
 }
-
+.scroll-dot{
+  width: 20px;
+  height: 20px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 64px;
+  background-color: #D1E0E2;
+}
+.scroll-dial{
+  background: #fff;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  position: absolute;
+  top: 8%;
+  left: -18px;
+  transform: translateY(-50%);
+  z-index: 4;
+}
 
 
 .list-master-container{

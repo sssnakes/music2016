@@ -87,6 +87,13 @@ $(document).ready(function() {
       $('.list-master-container').animate({ scrollTop: $("#cover4").offset().top }, 400);
   });
 
+  // BUTTON HIGHLIGHT
+  $('.scroll-button').mouseenter(function() {
+    $(this).find('.scroll-dot').css('background-color', '#000');
+  }).mouseleave(function(){
+    $(this).find('.scroll-dot').css('background-color', '#D1E0E2');
+  });
+
 
 
 // END
