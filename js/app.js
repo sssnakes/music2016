@@ -27,7 +27,7 @@ $(document).ready(function() {
     }, 150, function(){} );
     // TEXT
     $('.scroll-text').animate({
-      left: 120
+      left: 130
     }, 150, function(){} );
   }).mouseleave(function() {
     // CONTAINER
@@ -53,6 +53,7 @@ $(document).ready(function() {
   });
 
   // DISPLAY ALBUM ART
+  // http://jsfiddle.net/elclanrs/jF27b/
   $('.list-link').mousemove(function(e) {
       $art = $("#" + $(this).data('image-id'));
       $art.stop(1, 1).show();
@@ -73,17 +74,40 @@ $(document).ready(function() {
     $('.notes-title').animate({ backgroundColor: ('#' + bg) }, 400);
   });
 
+
+  // SCROLL DIAL MOVEMENTS
+  $('.list-master-container').scroll(function(){
+    var t = -($("#cover1").offset().top);
+        l = $('.list-master-container')[0].scrollHeight;
+        w = $(window).height();
+        h = l - w;
+        f = h / 100;
+        c = t / f;
+
+        d = $('.scroll-dial').offset().top;
+        b = $('.scroll-bar').height();
+        k = $('.scroll-dial').height();
+        p = (d / b);
+        y = ((k / 2) / p);
+        j = (p * 100) + ((k / 2) / p);
+    console.log(y);
+
+    $('.scroll-dial').css('top', c + '%');
+
+  });
+
   // SCROLL BUTTONS
-  $("#scroll-1").click(function() {
+  $("#scroll-t1").click(function() {
       $('.list-master-container').animate({ scrollTop: $("#cover1").offset().top }, 400);
   });
-  $("#scroll-2").click(function() {
+  $("#scroll-t2").click(function() {
       $('.list-master-container').animate({ scrollTop: $("#cover2").offset().top }, 400);
   });
-  $("#scroll-3").click(function() {
-      $('.list-master-container').animate({ scrollTop: $("#cover3").offset().top }, 400);
+  $("#scroll-t3").click(function() {
+      var s = $("#cover3").offset().top;
+      $('.list-master-container').animate({ scrollTop: s }, 400);
   });
-  $("#scroll-4").click(function() {
+  $("#scroll-t4").click(function() {
       $('.list-master-container').animate({ scrollTop: $("#cover4").offset().top }, 400);
   });
 

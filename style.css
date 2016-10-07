@@ -28,7 +28,7 @@ svg{
 ol{
   list-style-type: none;
 }
-.container{
+#container{
  position: absolute;
  width: 100vw;
  height: 100vh;
@@ -38,7 +38,6 @@ ol{
   width: calc(70% + 750px);
   height: 100vh;
   position: absolute;
-  /*left: 150px;*/
   display: inline-block;
 }
 
@@ -78,42 +77,72 @@ ol{
 .scroll-thread{
   background-color: #000;
   height: 90%;
-  margin: 12.5% 0;
+  top: 5%;
   box-sizing: border-box;
   width: 2px;
   left: 75px;
   position: absolute;
   display: inline-block;
+  transform: translateX(-50%);
 }
+.scroll-dot{
+  width: 20px;
+  height: 20px;
+  background-color: #D1E0E2;
+  border: 2px solid #000;
+  border-radius: 50%;
+  position: absolute;
+  left: 75px;
+  transform: translateX(-50%) translateY(-50%);
+}
+#dot-1{ top: 10%; }
+#dot-2{ top: 36.666%; }
+#dot-3{ top: 63.333%; }
+#dot-4{ top: 90%; }
+
+#scroll-t1{ top: 10%; }
+#scroll-t2{ top: 36.666%; }
+#scroll-t3{ top: 63.333%; }
+#scroll-t4{ top: 90%; }
+
+
 .scroll-text{
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   left: 150px;
 }
-.scroll-dot{
-  width: 20px;
-  height: 20px;
-  border: 2px solid #000;
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 64px;
-  background-color: #D1E0E2;
-}
-.scroll-dial{
+/*.scroll-dial{
   background: #fff;
   width: 35px;
   height: 35px;
   border-radius: 50%;
   border: 2px solid #000;
+  outline: 2px solid red;
   position: absolute;
-  top: 8%;
-  left: -18px;
-  transform: translateY(-50%);
-  z-index: 4;
+  box-sizing: border-box;
+  margin: 5px;
+  top: 10%;
+  left: 75px;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 5;
+  cursor: pointer;
+}*/
+.scroll-dial{
+  background: #fff;
+  width: 70px;
+  height: 36px;
+  border: 2px solid #000;
+  position: absolute;
+  box-sizing: border-box;
+  /*margin: 5px;*/
+  top: 10%;
+  left: 75px;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 5;
+  cursor: pointer;
 }
+
 
 
 .list-master-container{
