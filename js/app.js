@@ -82,7 +82,7 @@ $(document).ready(function() {
         w = $(window).height();
         h = l - w;
         f = h / 100;
-        c = t / f;
+        c = (t / f) * .80;
 
         d = $('.scroll-dial').offset().top;
         b = $('.scroll-bar').height();
@@ -90,9 +90,8 @@ $(document).ready(function() {
         p = (d / b);
         y = ((k / 2) / p);
         j = (p * 100) + ((k / 2) / p);
-    console.log(y);
 
-    $('.scroll-dial').css('top', c + '%');
+    $('.scroll-dial').css('top', 10 + c + '%');
 
   });
 

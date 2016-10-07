@@ -42,3 +42,5 @@ Progress! The dial now works on scrolling up and down. Good start. However I mis
 * The distance from A to B to C to D to End is relative to the corresponding marks on the dial track. Will likely need to create height() variables for each space so as to allow for the varying height of the spaces to not affect this, rather than as it is now which assumes each space is of the same height.
 * A variable is required to fix the offset tracking of the dial’s position due to the TransformY CSS. The variable used now doesn’t compensate for this and tracks position outside of the visible window.
 * Not sure yet how to solve the problem of reaching the bottom of the dial track, as it currently is detected based on the *top* of each space. Perhaps this can alter once it reaches the final space?
+
+EDIT: **0.191** Added a hot fix to solve some of the problems I had a few minutes ago in relation to the dial passing out of the window. My brain is fried…
