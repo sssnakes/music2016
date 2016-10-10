@@ -196,7 +196,6 @@ ol{
   display: block;
 }
 .notes-title{
-  background-color: #2F51D7;
   z-index: 101;
   display: inline-block;
   position: relative;
@@ -209,7 +208,7 @@ ol{
   color: #fff;
   border: 2px solid #000;
   padding: 25px 15px;
-  background-color: #2F51D7;
+  background-color: none;
   box-shadow: 0px 0px 10px #000;
 }
 .boring-container{

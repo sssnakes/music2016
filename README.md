@@ -44,3 +44,6 @@ Progress! The dial now works on scrolling up and down. Good start. However I mis
 * Not sure yet how to solve the problem of reaching the bottom of the dial track, as it currently is detected based on the *top* of each space. Perhaps this can alter once it reaches the final space?
 
 EDIT: **0.191** Added a hot fix to solve some of the problems I had a few minutes ago in relation to the dial passing out of the window. My brain is fried…
+
+### 0.20
+Taking a break from things to work on the PHP/AJAX requests for the site. Semi-working atm, need to add in a few extra .php pages to commence further testing.

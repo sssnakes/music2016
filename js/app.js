@@ -55,15 +55,6 @@ $(document).ready(function() {
       $art.hide();
   });
 
-  // CHANGE INFO BG COLOUR
-  $('.list-link').on('click', function(e) {
-    var bg = $(this).data('bg');
-    $('#info-slide').animate({ backgroundColor: ('#' + bg) }, 400);
-    $('.finn-notes').animate({ backgroundColor: ('#' + bg) }, 400);
-    $('.notes-title').animate({ backgroundColor: ('#' + bg) }, 400);
-  });
-
-
   // SCROLL DIAL MOVEMENTS
   $('.list-master-container').scroll(function(){
     var t = -($("#cover1").offset().top);
@@ -125,25 +116,40 @@ $(document).ready(function() {
   });
 
 
-  var trigger = $('.list-link'),
-      container = $('#info-slide');
+  // AJAX CALL TO CHANGE INFO SLIDE
+  $('.list-link').on('click', function(){
 
-  trigger.on('click', function(){
+    var $this = $(this);
 
-  var $this = $(this),
-      target = $this.data('target');
+    $('.info-slide-container').fadeOut(function(){
 
-      container.load('./music/' + target + '.php');
+      var container = $('#info-slide'),
+          target = $this.data('target');
+          console.log(('./music/' + target + '.php'));
+          container.load('./music/' + target + '.php', function(){
+
+            $('.info-slide-container').fadeIn();
+
+          });
+    });
+
+      // var $this = $(this),
+      //     container = $('#info-slide'),
+      //     target = $this.data('target');
+      //     console.log(('./music/' + target + '.php'));
+      //     container.load('./music/' + target + '.php');
+
+    $('.info-slide-container').fadeIn();
 
   });
 
 
-
-
-
-
-
-
+  // CHANGE INFO BG COLOUR
+  $('.list-link').on('click', function(e) {
+    var bg = $(this).data('bg');
+    $('#info-slide').animate({ backgroundColor: ('#' + bg) }, 400);
+    $('.notes-title').animate({ backgroundColor: ('#' + bg) }, 400);
+  });
 
 
 
