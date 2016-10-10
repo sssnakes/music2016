@@ -7,7 +7,7 @@
   <div class="notes-title sport sport-small" style="background-color: #656763;">My Notes</div>
   <div class="notes-box">
     <p class="finn-notes">
-      Fuck yes, angry music. Here's where I can talk more about why I liked this for reasons I'll explain later.
+      As a good man once said, "I gotta' be true to my Death Grips-dickriding heart". DG had another solid release this year but an unexpected surprise, Street Sects came out of nowhere and just won it out for me.
       </br></br>
       Fresh and nasty.
     </p>

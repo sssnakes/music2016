@@ -47,3 +47,6 @@ EDIT: **0.191** Added a hot fix to solve some of the problems I had a few minute
 
 ### 0.20
 Taking a break from things to work on the PHP/AJAX requests for the site. Semi-working atm, need to add in a few extra .php pages to commence further testing.
+
+### 0.21
+Ajax pull in working order now, even if the transitions are still a little buggy. Resuming work on the slider once more, as I feel it’s the last great hurdle to take care of now that everything else is beginning to take shape.

@@ -44,14 +44,14 @@ $(document).ready(function() {
   // DISPLAY ALBUM ART
   // http://jsfiddle.net/elclanrs/jF27b/
   $('.list-link').mousemove(function(e) {
-      $art = $("#" + $(this).data('image-id'));
+      $art = $("#" + $(this).data('target'));
       $art.stop(1, 1).show();
       $art.offset({
           top: e.pageY + 20,
           left: e.pageX + 10
       });
   }).mouseleave(function() {
-      $art = $("#" + $(this).data('image-id'));
+      $art = $("#" + $(this).data('target'));
       $art.hide();
   });
 
@@ -122,7 +122,7 @@ $(document).ready(function() {
     var $this = $(this);
 
     $('.info-slide-container').fadeOut(function(){
-
+      $(this).hide();
       var container = $('#info-slide'),
           target = $this.data('target');
           console.log(('./music/' + target + '.php'));

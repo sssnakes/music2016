@@ -2,12 +2,12 @@
   <p class="sport sport-small">Xiu Xiu</p>
   <p class="sport info-title">Xiu Xiu Plays the Music from Twin Peaks</p>
 
-  <iframe class="youtube" width="560" height="315" src="http://www.youtube.com/watch?v=d7b2NdNewFI" frameborder="0"></iframe>
+  <iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/d7b2NdNewFI" frameborder="0"></iframe>
 
   <div class="notes-title sport sport-small" style="background-color: #E92638;">My Notes</div>
   <div class="notes-box">
     <p class="finn-notes">
-      I love me some Twin Peaks...!
+      Twin Peaks is almost too easy a tribute-concept to work from. Almost. Unless you have pipes like Jamie Stewart's.
     </p>
   </div>
 
