@@ -31,7 +31,7 @@ $(document).ready(function() {
   });
 
   // HOVER SLIDE, RIGHT CONTAINER
-  $('.info-slide').mouseenter(function() {
+  $('#info-slide').mouseenter(function() {
     $('.inner-container-slider').animate({
       right: 0
     }, 200, function(){} );
@@ -58,7 +58,7 @@ $(document).ready(function() {
   // CHANGE INFO BG COLOUR
   $('.list-link').on('click', function(e) {
     var bg = $(this).data('bg');
-    $('.info-slide').animate({ backgroundColor: ('#' + bg) }, 400);
+    $('#info-slide').animate({ backgroundColor: ('#' + bg) }, 400);
     $('.finn-notes').animate({ backgroundColor: ('#' + bg) }, 400);
     $('.notes-title').animate({ backgroundColor: ('#' + bg) }, 400);
   });
@@ -105,6 +105,46 @@ $(document).ready(function() {
   }).mouseleave(function(){
     $(this).find('.scroll-dot').css('background-color', '#D1E0E2');
   });
+
+  // $('#site-info-container').animate({
+  //   bottom: '-100%'
+  // }, 600, function(){
+  //
+  // });
+
+  $('#site-info-close').click(function(){
+    $('#site-info-container').animate({
+      bottom: '-100%'
+    }, 600, function(){} );
+  });
+
+  $('.info-button').click(function(){
+    $('#site-info-container').animate({
+      bottom: 0
+    }, 600, function(){} );
+  });
+
+
+  var trigger = $('.list-link'),
+      container = $('#info-slide');
+
+  trigger.on('click', function(){
+
+  var $this = $(this),
+      target = $this.data('target');
+
+      container.load('./music/' + target + '.php');
+
+  });
+
+
+
+
+
+
+
+
+
 
 
 

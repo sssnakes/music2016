@@ -1,3 +1,4 @@
+<DOCTYPE html>
 <html>
 <head>
 
@@ -14,6 +15,13 @@
 <body>
 
 <div id="container">
+
+  <div id="site-info-container">
+    <a href="www.finnanbarry.com" class="site-info-title-1 sport">finnanbarry.com</a>
+    <p class="site-info-title-2 sport">/music/2016</p>
+
+    <div id="site-info-close"></div>
+  </div>
 
     <div class="left-bar-container">
 
@@ -68,12 +76,12 @@
 
           <div class="track-list">
             <ol>
-              <li class="list-link" data-image-id="xiu" data-bg="E92638">Xiu Xiu - Plays Music from Twin Peaks </li>
+              <li class="list-link" data-image-id="xiu" data-bg="E92638" data-target="xiuxiu">Xiu Xiu - Plays Music from Twin Peaks </li>
               <li class="list-link" data-image-id="bad" data-bg="5F9CCE">Badbadnotgood - IV </li>
               <li class="list-link" data-image-id="glo" data-bg="817867">The Gloaming - 2 </li>
               <li class="list-link" data-image-id="dis" data-bg="76517A">Disasterpeace - Hyper Light Drifter</li>
               <li class="list-link" data-image-id="lii" data-bg="27DA3F">Liima - ii</li>
-              <li class="list-link" data-image-id="str" data-bg="656763">Street Sects - End Positon</li>
+              <li class="list-link" data-image-id="str" data-bg="656763" data-target="steetsects">Street Sects - End Positon</li>
               <li class="list-link" data-image-id="flo" data-bg="5EB769">Floex (Thomas Dvorak) - Samorost 3</li>
             </ol>
           </div>
@@ -179,39 +187,11 @@
 
       </div> <!-- END OF CONTAINER -->
 
-      <div class="info-slide">
+      <div id="info-slide">
 
 <!-- TO BE REPLACED WITH PHP AJAX FILLS -->
 
-        <p class="sport sport-small">Street Sects</p>
-        <p class="sport info-title">End Position</p>
-
-        <iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/f7buxWtIPDM" frameborder="0" allowfullscreen></iframe>
-
-        <div class="notes-title sport sport-small">My Notes</div>
-        <div class="notes-box">
-          <p class="finn-notes">
-            Fuck yes, angry music. Here's where I can talk more about why I liked this for reasons I'll explain later.
-            </br></br>
-            Fresh and nasty.
-          </p>
-        </div>
-
-        <div class="boring-container">
-          <ol class="boring-left">
-            <li>Label:</li>
-            <li>Release:</li>
-            <li>Genre:</li>
-            <li>Length:</li>
-          </ol>
-          <ol class="boring-right">
-            <li>The Flesner</li>
-            <li>16 Sept. 2016</li>
-            <li>Synth Noise-Punk, Angry</li>
-            <li>32min</li>
-          </ol>
-        </div>
-
+    <?php include('./music/xiuxiu.php'); ?>
 
 <!-- END HERE -->
 
@@ -240,3 +220,4 @@
 
 </body>
 </html>
+</DOCTYPE>

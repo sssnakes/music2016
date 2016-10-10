@@ -166,7 +166,7 @@ ol{
 }
 
 /*INFO SLIDE CSS*/
-.info-slide{
+#info-slide{
   height: 100vh;
   width: 750px;
   background-color: #2F51D7;
@@ -185,6 +185,7 @@ ol{
   text-transform: uppercase;
   padding: 36px 36px 36px 46px;
   box-sizing: border-box;
+  cursor: pointer;
 }
 .info-title{
   margin: 10px 0 0 0;
@@ -294,4 +295,45 @@ img.mouse-hovered {
   height: 250px;
   background-color: #fff;
   box-shadow: 0px 0px 15px #666;
+}
+
+
+
+#site-info-container{
+  position: absolute;
+  z-index: 500;
+  background-color: #FEFD38;
+  width: 95vw;
+  min-height: 95vh;
+  bottom: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0px 0px 100px #000;
+  box-sizing: border-box;
+  padding: 60px;
+}
+.site-info-title-1{
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  -webkit-text-fill-color: #FEFD38;
+  font-size: 3em;
+  display: inline-block;
+  text-decoration: none;
+}
+.site-info-title-1:hover{
+  -webkit-text-stroke-width: 0px;
+  -webkit-text-stroke-color: black;
+  -webkit-text-fill-color: #000;
+}
+.site-info-title-2{
+  font-size: 3em;
+  display: inline-block;
+  position: relative;
+  left: -5px;
+}
+#site-info-close{
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  float: right;
 }
