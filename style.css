@@ -74,8 +74,8 @@ ol{
 }
 .scroll-thread{
   background-color: #000;
-  height: 90%;
-  top: 5%;
+  height: 80%;
+  top: 10%;
   box-sizing: border-box;
   width: 2px;
   left: 75px;
@@ -84,24 +84,32 @@ ol{
   transform: translateX(-50%);
 }
 .scroll-dot{
-  width: 20px;
-  height: 20px;
-  background-color: #D1E0E2;
-  border: 2px solid #000;
-  border-radius: 50%;
+  width: 40px;
+  height: 2px;
+  background-color: #000;
   position: absolute;
   left: 75px;
   transform: translateX(-50%) translateY(-50%);
 }
 #dot-1{ top: 10%; }
-#dot-2{ top: 36.666%; }
-#dot-3{ top: 63.333%; }
-#dot-4{ top: 90%; }
+#dot-2{ top: 34%; }
+#dot-3{ top: 58%; }
+#dot-4{ top: 82%; }
+#dot-e{
+  top: 90%;
+  height: 8px;
+  width: 8px;
+  position: absolute;
+  left: 75px;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: #000;
+  border-radius: 50%;
+}
 
 #scroll-t1{ top: 10%; }
-#scroll-t2{ top: 36.666%; }
-#scroll-t3{ top: 63.333%; }
-#scroll-t4{ top: 90%; }
+#scroll-t2{ top: 34%; }
+#scroll-t3{ top: 58%; }
+#scroll-t4{ top: 82%; }
 
 
 .scroll-text{
@@ -112,7 +120,9 @@ ol{
   cursor: pointer;
 }
 .scroll-text:hover{
-  text-shadow: 0px 0px 20px #000;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  -webkit-text-fill-color: #D1E0E2;
 }
 /*.scroll-dial{
   background: #fff;
@@ -137,7 +147,6 @@ ol{
   border: 2px solid #000;
   position: absolute;
   box-sizing: border-box;
-  /*margin: 5px;*/
   top: 10%;
   left: 75px;
   transform: translateX(-50%) translateY(-50%);

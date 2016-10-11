@@ -50,3 +50,6 @@ Taking a break from things to work on the PHP/AJAX requests for the site. Semi-w
 
 ### 0.21
 Ajax pull in working order now, even if the transitions are still a little buggy. Resuming work on the slider once more, as I feel it’s the last great hurdle to take care of now that everything else is beginning to take shape.
+
+### 0.22
+Slider has been reshaped to make sense, and now correctly scrolls to the first ‘notch’ on the slide. First attempt at simply adding the two distance variables together to reach the second notch failed so I’ll need to work out a cleaner solution to adding the distances together…
