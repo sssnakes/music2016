@@ -3,6 +3,10 @@ $(document).ready(function() {
   var winWid  = $(window).width();
   var set     = (winWid - (900 + (winWid * 0.70)));
 
+  var r1 = $('#row1').height(),
+      r2 = $('#row2').height(),
+      r3 = $('#row3').height();
+
   function slidePos() {
     set = (winWid - (900 + (winWid * 0.70)));
     // SET SLIDER POSITION
@@ -14,6 +18,9 @@ $(document).ready(function() {
   window.onresize = function() {
     winWid  = $(window).width();
     slidePos();
+    r1 = $('#row1').height(),
+    r2 = $('#row2').height(),
+    r3 = $('#row3').height();
   };
 
   // HOVER SLIDE, LEFT CONTAINER
@@ -70,30 +77,67 @@ $(document).ready(function() {
   $('.scroll-dial').draggable({
     axis: "y",
     containment: "parent",
+    start: function(){
+      $('.scroll-dial').css('box-shadow', '0px 0px 15px #000')
+    },
+    // on drag
     drag: function( event, ui ) {
+          // distance from top in pixels
+      var d = $('.scroll-dial').css('top').replace(/[^-\d\.]/g, ''),
+          // container maximum height
+          h = $('#dial-container').css('height').replace(/[^-\d\.]/g, ''),
+          // percentage of dial distance / 100
+          x1  = d / h * 100;
+          if (x1 > 30) {x1 = 30};
+          x2  = (d / h * 100) - 30;
+          if (x1 < 29.999) {x2 = 0} else { x2 = x2 };
+          x3  = (d / h * 100) - 60;
+          if (x2 < 29.999) {x3 = 0} else { x3 = x3 };
 
+          // height of each row
+      // var r1 = $('#row1').height(),
+      //     r2 = $('#row2').height(),
+      //     r3 = $('#row3').height();
 
-    }
+          // distance from top in pixels
+      var g1 = -($("#row1").offset().top);
+      var g2 = -($("#row2").offset().top);
+          // 0 until it hits row top line
+          if (g2 < 0){ g2 = 0; };
+      var g3 = -($("#row3").offset().top);
+          if (g3 < 0){ g3 = 0; };
+
+          // height to row1 out of 30%
+      var p1 = r1 * (x1 / 30);
+          // if maxed out to row limit, then stop
+          if (p1 > r1) {p1 = r1};
+      var p2 = r2 * (x2 / 30);
+          if (p2 > r2) {p2 = r2};
+      var p3 = r3 * (x3 / 30);
+          if (p3 > r3) {p3 = r3};
+
+      console.log(x1);
+      console.log(x2);
+
+      $('.list-master-container').scrollTop( p1 + p2 + p3 );
+
+    },
+    stop: function(){
+      $('.scroll-dial').css('box-shadow', 'none')
+    },
   });
 
   // SCROLL DIAL MOVEMENTS
   $('.list-master-container').scroll(function(){
-    // var t = -($("#cover1").offset().top);
-    //     l = $('.list-master-container')[0].scrollHeight;
-    //     w = $(window).height();
-    //     h = l - w;
-    //     f = h / 100;
-    //     c = (t / f) * .80;
 
     var t  = -($("#cover1").offset().top);
         l  = $('.list-master-container')[0].scrollHeight;
         w  = $(window).height();
         u  = t - w;
 
-        r1 = $('#row1').height(),
-        r2 = $('#row2').height(),
-        r3 = $('#row3').height(),
-        r4 = $('#row4').height();
+        // r1 = $('#row1').height(),
+        // r2 = $('#row2').height(),
+        // r3 = $('#row3').height();
         // END DIS
         y  = t - (r1 + r2 + r3);
         if (y < 0){ y = 0; };
@@ -133,17 +177,16 @@ $(document).ready(function() {
 
   // SCROLL BUTTONS
   $("#scroll-t1").click(function() {
-      $('.list-master-container').animate({ scrollTop: $("#cover1").offset().top }, 400);
+      $('.list-master-container').animate({ scrollTop: 0 }, 400);
   });
   $("#scroll-t2").click(function() {
-      $('.list-master-container').animate({ scrollTop: $("#cover2").offset().top }, 400);
+      $('.list-master-container').animate({ scrollTop: r1 }, 400);
   });
   $("#scroll-t3").click(function() {
-      var s = $("#cover3").offset().top;
-      $('.list-master-container').animate({ scrollTop: s }, 400);
+      $('.list-master-container').animate({ scrollTop: r1 + r2 }, 400);
   });
   $("#scroll-t4").click(function() {
-      $('.list-master-container').animate({ scrollTop: $("#cover4").offset().top }, 400);
+      $('.list-master-container').animate({ scrollTop: r1 + r2 + r3 }, 400);
   });
 
   // BUTTON HIGHLIGHT
@@ -180,7 +223,7 @@ $(document).ready(function() {
 
     var $this = $(this);
 
-    $('.info-slide-container').fadeOut(function(){
+    $('.info-slide-container').fadeOut().delay( 800, function(){
       $(this).hide();
       var container = $('#info-slide'),
           target = $this.data('target');

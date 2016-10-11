@@ -122,22 +122,6 @@ ol{
 .scroll-text:hover{
   text-shadow: 0px 0px 6px #000;
 }
-/*.scroll-dial{
-  background: #fff;
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  border: 2px solid #000;
-  outline: 2px solid red;
-  position: absolute;
-  box-sizing: border-box;
-  margin: 5px;
-  top: 10%;
-  left: 75px;
-  transform: translateX(-50%) translateY(-50%);
-  z-index: 5;
-  cursor: pointer;
-}*/
 #dial-container{
   height: 80%;
   width: 100%;
@@ -152,11 +136,11 @@ ol{
   border: 2px solid #000;
   position: absolute;
   box-sizing: border-box;
-  /*top: 10%;*/
   left: 40px;
   transform: translateY(-50%);
   z-index: 5;
   cursor: pointer;
+  opacity: .2;
 }
 .scroll-bit{
   width: 65%;
