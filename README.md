@@ -53,3 +53,9 @@ Ajax pull in working order now, even if the transitions are still a little buggy
 
 ### 0.22
 Slider has been reshaped to make sense, and now correctly scrolls to the first ‘notch’ on the slide. First attempt at simply adding the two distance variables together to reach the second notch failed so I’ll need to work out a cleaner solution to adding the distances together…
+
+### 0.23
+Got a little carried away since the last push! Things changed:
+- Added a new SVG for the Revisits.
+- Resizing the page now properly rejigs the sliders.
+- Slide goes up and down correctly with the page, have it draggable atm but not functioning as a true scroll bar (so close to being done!)

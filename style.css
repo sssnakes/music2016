@@ -120,9 +120,7 @@ ol{
   cursor: pointer;
 }
 .scroll-text:hover{
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-  -webkit-text-fill-color: #D1E0E2;
+  text-shadow: 0px 0px 6px #000;
 }
 /*.scroll-dial{
   background: #fff;
@@ -140,6 +138,13 @@ ol{
   z-index: 5;
   cursor: pointer;
 }*/
+#dial-container{
+  height: 80%;
+  width: 100%;
+  box-sizing: border-box;
+  top: 10%;
+  position: absolute;
+}
 .scroll-dial{
   background: #fff;
   width: 70px;
@@ -147,13 +152,26 @@ ol{
   border: 2px solid #000;
   position: absolute;
   box-sizing: border-box;
-  top: 10%;
-  left: 75px;
-  transform: translateX(-50%) translateY(-50%);
+  /*top: 10%;*/
+  left: 40px;
+  transform: translateY(-50%);
   z-index: 5;
   cursor: pointer;
 }
-
+.scroll-bit{
+  width: 65%;
+  background-color: #000;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+}
+.scroll-bit1{
+  top: 40%;
+}
+.scroll-bit2{
+  top: 60%;
+}
 
 
 .list-master-container{
@@ -171,6 +189,12 @@ ol{
   margin: 100px auto;
   box-sizing: border-box;
   position: relative;
+}
+.svg-revist{
+  height: 75%;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
 }
 .end-star{
   height: 100%;

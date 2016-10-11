@@ -1,15 +1,24 @@
 $(document).ready(function() {
 
-  // FIXES THE RIGHT WINDOW PLACEMENT ON LOAD
   var winWid  = $(window).width();
   var set     = (winWid - (900 + (winWid * 0.70)));
 
-  // SET SLIDER POSITION
-  $('.inner-container-slider').css('right', set + 'px');
+  function slidePos() {
+    set = (winWid - (900 + (winWid * 0.70)));
+    // SET SLIDER POSITION
+    $('.inner-container-slider').css('right', set + 'px');
+  };
+
+  slidePos();
+
+  window.onresize = function() {
+    winWid  = $(window).width();
+    slidePos();
+  };
 
   // HOVER SLIDE, LEFT CONTAINER
   $('.left-bar-container').mouseenter(function() {
-
+      set  = (winWid - (900 + (winWid * 0.70)));
     // CONTAINER
     $('.inner-container-slider').animate({
       right: set - 150
@@ -32,6 +41,7 @@ $(document).ready(function() {
 
   // HOVER SLIDE, RIGHT CONTAINER
   $('#info-slide').mouseenter(function() {
+      set = (winWid - (900 + (winWid * 0.70)));
     $('.inner-container-slider').animate({
       right: 0
     }, 200, function(){} );
@@ -55,6 +65,17 @@ $(document).ready(function() {
       $art.hide();
   });
 
+
+
+  $('.scroll-dial').draggable({
+    axis: "y",
+    containment: "parent",
+    drag: function( event, ui ) {
+
+
+    }
+  });
+
   // SCROLL DIAL MOVEMENTS
   $('.list-master-container').scroll(function(){
     // var t = -($("#cover1").offset().top);
@@ -63,33 +84,50 @@ $(document).ready(function() {
     //     h = l - w;
     //     f = h / 100;
     //     c = (t / f) * .80;
-    //
-    //     d = $('.scroll-dial').offset().top;
-    //     b = $('.scroll-bar').height();
-    //     k = $('.scroll-dial').height();
-    //     p = (d / b);
-    //     y = ((k / 2) / p);
-    //     j = (p * 100) + ((k / 2) / p);
-    //
-    // $('.scroll-dial').css('top', 10 + c + '%');
 
     var t  = -($("#cover1").offset().top);
         l  = $('.list-master-container')[0].scrollHeight;
+        w  = $(window).height();
+        u  = t - w;
 
         r1 = $('#row1').height(),
         r2 = $('#row2').height(),
         r3 = $('#row3').height(),
         r4 = $('#row4').height();
-
+        // END DIS
+        y  = t - (r1 + r2 + r3);
+        if (y < 0){ y = 0; };
+        a  = (l - (r1 + r2 + r3)) - w;
+        h  = y / (a * .1);
+        // 1
         d1 = (r1 / 100);
         c1 = r1 + (t - r1);
         p1 = 100 * (c1 / r1);
         if (p1 > 100){ p1 = 100; };
-        x1 = p1 * .24;
+        x1 = p1 * .3;
+        // 2
+        d2 = (r2 / 100);
+        k  = t - r1;
+        if (k < 0){ k = 0; };
+        c2 = r2 + (k - r2);
+        p2 = 100 * (c2 / r2);
+        if (p2 > 100){ p2 = 100; };
+        x2 = p2 * .3;
+        // 3
+        d3 = (r3 / 100);
+        k2 = t - r1 - r2;
+        if (k2 < 0){ k2 = 0; };
+        c3 = r3 + (k2 - r3);
+        p3 = 100 * (c3 / r3);
+        if (p3 > 100){ p3 = 100; };
+        x3 = p3 * .3;
+        // POSITON
+        pos = x1 + x2 + x3;
+        if (pos == 90){
+          pos = pos + h;
+        };
 
-    console.log(p1);
-
-    $('.scroll-dial').css('top', 10 + x1 + '%');
+    $('.scroll-dial').css('top', pos + '%');
 
   });
 
