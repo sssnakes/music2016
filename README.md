@@ -62,3 +62,5 @@ Got a little carried away since the last push! Things changed:
 
 ### 0.24
 It is done! The slider now works, draggable and scrolling naturally. It could do with one last finish off of adding the ability to drag to the very end of the page, but I’m too tired from solving basic math all day, so maybe later… Back to fine tuning the design now, at least it’s stuff I can know.
+
+TEST
