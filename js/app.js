@@ -204,15 +204,15 @@ $(document).ready(function() {
 
 
   // INFORMATION SLIDE CLOSE
-  $('#site-info-close').click(function(){
-    $('#site-info-container').animate({
+  $('#site-intro-close').click(function(){
+    $('#site-intro-container').animate({
       bottom: '-100%'
     }, 600, function(){} );
   });
 
   // INFORMATION SLIDE OPEN
-  $('.info-button').click(function(){
-    $('#site-info-container').animate({
+  $('.intro-button').click(function(){
+    $('#site-intro-container').animate({
       bottom: 0
     }, 300, function(){} );
   });
@@ -223,7 +223,7 @@ $(document).ready(function() {
 
     var $this = $(this);
 
-    $('.info-slide-container').fadeOut().delay( 800, function(){
+    $('.info-slide-container').fadeOut().delay( 1200, function(){
       $(this).hide();
       var container = $('#info-slide'),
           target = $this.data('target');

@@ -17,11 +17,39 @@
 
 <div id="container">
 
-  <div id="site-info-container">
-    <a href="www.finnanbarry.com" class="site-info-title-1 sport">finnanbarry.com</a>
-    <p class="site-info-title-2 sport">/music/2016</p>
+  <div id="site-intro-container">
+    <a href="www.finnanbarry.com" class="site-intro-title-1 sport">finnanbarry.com</a>
+    <p class="site-intro-title-2 sport">/music/2016</p>
 
-    <div id="site-info-close"></div>
+    <div id="site-intro-close">
+      <svg style="height: 50px;" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      	 viewBox="0 0 33.769 33.77" enable-background="new 0 0 33.769 33.77" xml:space="preserve">
+        <g>
+        	<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="2.399" y1="2.825" x2="30.714" y2="31.141"/>
+        	<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="30.714" y1="2.825" x2="2.399" y2="31.141"/>
+        </g>
+      </svg>
+    </div>
+
+    <div class="intro-text-container">
+      <div class="intro-text">
+        <p class="sport">25.11.1991</p>
+        <p>What a year! I took a year out to test the waters with freelancing whilst I learnt how to code (tough, but rewarding), travelled to Africa for the first time (Namibia, it was wonderful) and contemplated moving house a few times (didn’t; too stressy). I also made many new friends and tried my best to put myself out there more. It’s been a year of growth, I hope.
+        </br></br>
+        Last year I commemorated the year’s send-off with a bucketlist of my favourite album releases, whilst trying to flex my coding skills a bit to see how far I’ve come. It was rough...
+        </br></br>
+        Expect this year’s to be similarly raw and messy, as well as a little OTT as I try things for the sake of trying, but I hope you enjoy. Hit me up on Twitter and let me know some of yours, and thanks for stopping by.
+        </br></br>
+        - <a href="http://www.twitter.com/finnanbarry">@finnanbarry</a></p>
+      </div>
+
+      <div class="intro-colophon">
+        <p class="sport">Colophon</p>
+        <p>
+        </br></br></p>
+      </div>
+    </div>
+
   </div>
 
     <div class="left-bar-container">
@@ -54,8 +82,8 @@
 
       </div>
 
-      <div id="info-button-main" class="info-button sport sport-small">Info</div>
-      <div id="info-button-side" class="info-button sport sport-small">rmation</div>
+      <div id="intro-button-main" class="intro-button sport sport-small">Info</div>
+      <div id="intro-button-side" class="intro-button sport sport-small">rmation</div>
 
     </div>
 

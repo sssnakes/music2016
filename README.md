@@ -63,4 +63,8 @@ Got a little carried away since the last push! Things changed:
 ### 0.24
 It is done! The slider now works, draggable and scrolling naturally. It could do with one last finish off of adding the ability to drag to the very end of the page, but I’m too tired from solving basic math all day, so maybe later… Back to fine tuning the design now, at least it’s stuff I can know.
 
-TEST
+### 0.241
+Moving my local directories around to be able to use localhost with MAMP, I nearly deleted everything, twice. Go me…
+
+### 0.25
+Just a handful of minor updates. Ajax script seems to have been fixed by just adding a slight .delay() ¯\_(ツ)_/¯.

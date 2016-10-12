@@ -201,7 +201,7 @@ ol{
 .info-slide-container{
   display: none;
 }
-.info-button{
+.intro-button{
   width: 100%;
   height: 10vh;
   display: inline-block;
@@ -322,7 +322,7 @@ img.mouse-hovered {
 
 
 
-#site-info-container{
+#site-intro-container{
   position: absolute;
   z-index: 500;
   background-color: #FEFD38;
@@ -335,7 +335,7 @@ img.mouse-hovered {
   box-sizing: border-box;
   padding: 60px;
 }
-.site-info-title-1{
+.site-intro-title-1{
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   -webkit-text-fill-color: #FEFD38;
@@ -343,20 +343,50 @@ img.mouse-hovered {
   display: inline-block;
   text-decoration: none;
 }
-.site-info-title-1:hover{
+.site-intro-title-1:hover{
   -webkit-text-stroke-width: 0px;
   -webkit-text-stroke-color: black;
   -webkit-text-fill-color: #000;
 }
-.site-info-title-2{
+.site-intro-title-2{
   font-size: 3em;
   display: inline-block;
   position: relative;
   left: -5px;
 }
-#site-info-close{
-  width: 30px;
-  height: 30px;
-  background-color: red;
+#site-intro-close{
+  width: 50px;
+  height: 50px;
+  float: right;
+  transition: .4s;
+  cursor: pointer;
+}
+#site-intro-close:hover{
+  transform: rotate(90deg);
+}
+.intro-text-container{
+  width: 80%;
+  margin: 80px auto;
+}
+.intro-text-container p{
+  font-size: 1em;
+}
+.intro-text-container p.sport{
+  font-size: 1em;
+  margin: 0 0 25px 0;
+}
+.intro-text-container p a{
+  color: #000;
+  text-decoration: #000;
+}
+.intro-text-container p a:hover{
+  text-decoration: none;
+}
+.intro-text{
+  width: 50%;
+  float: left;
+}
+.intro-colophon{
+  width: 40%;
   float: right;
 }
