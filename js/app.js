@@ -25,25 +25,21 @@ $(document).ready(function() {
 
   // HOVER SLIDE, LEFT CONTAINER
   $('.left-bar-container').mouseenter(function() {
-      set  = (winWid - (900 + (winWid * 0.70)));
-    // CONTAINER
-    $('.inner-container-slider').animate({
-      right: set - 150
-    }, 150, function(){} );
-    // TEXT
-    $('.scroll-text').animate({
-      left: 130
-    }, 150, function(){} );
+    set  = (winWid - (900 + (winWid * 0.70)));
+    $('.inner-container-slider').animate({ right: set - 150 }, 150);
+    $('.scroll-text').animate({ left: 130 }, 150);
+    $('#intro-button-side').animate({ left: 93 }, 150);
   }).mouseleave(function() {
-    // CONTAINER
-    $('.inner-container-slider').animate({
-      right: set
-    }, 150, function(){} );
-    // TEXT
-    $('.scroll-text').animate({
-      left: 150
-    }, 150, function(){} );
+    $('.inner-container-slider').animate({ right: set }, 150);
+    $('.scroll-text').animate({ left: 150 }, 150);
+    $('#intro-button-side').animate({ left: 136 }, 150);
+  });
 
+
+  $('.intro-button').mouseenter(function(){
+    $('.intro-button').css('text-shadow', '0px 0px 5px #000');
+  }).mouseleave(function(){
+    $('.intro-button').css('text-shadow', 'none');
   });
 
   // HOVER SLIDE, RIGHT CONTAINER
@@ -206,54 +202,40 @@ $(document).ready(function() {
   // INFORMATION SLIDE CLOSE
   $('#site-intro-close').click(function(){
     $('#site-intro-container').animate({
-      bottom: '-100%'
-    }, 600, function(){} );
+      bottom: '-200%'
+    }, 600);
   });
 
   // INFORMATION SLIDE OPEN
   $('.intro-button').click(function(){
     $('#site-intro-container').animate({
       bottom: 0
-    }, 300, function(){} );
+    }, 600);
   });
 
+  $('.info-slide-container').fadeIn();
 
   // AJAX CALL TO CHANGE INFO SLIDE
   $('.list-link').on('click', function(){
 
-    var $this = $(this);
+    var bg = $(this).data('bg'),
+        $this = $(this);
+    $('#info-slide').animate({ backgroundColor: ('#' + bg) }, 400);
+    $('.notes-title').animate({ backgroundColor: ('#' + bg) }, 400);
 
     $('.info-slide-container').fadeOut().delay( 1200, function(){
       $(this).hide();
       var container = $('#info-slide'),
           target = $this.data('target');
-          console.log(('./music/' + target + '.php'));
           container.load('./music/' + target + '.php', function(){
 
+            $('.notes-title').css('background-color', ('#' + bg));
             $('.info-slide-container').fadeIn();
 
           });
     });
 
-      // var $this = $(this),
-      //     container = $('#info-slide'),
-      //     target = $this.data('target');
-      //     console.log(('./music/' + target + '.php'));
-      //     container.load('./music/' + target + '.php');
-
-    $('.info-slide-container').fadeIn();
-
   });
-
-
-  // CHANGE INFO BG COLOUR
-  $('.list-link').on('click', function(e) {
-    var bg = $(this).data('bg');
-    $('#info-slide').animate({ backgroundColor: ('#' + bg) }, 400);
-    $('.notes-title').animate({ backgroundColor: ('#' + bg) }, 400);
-  });
-
-
 
 
 // END

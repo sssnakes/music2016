@@ -4,7 +4,7 @@
 
   <iframe class="youtube" width="560" height="315" src="http://www.youtube.com/embed/yEl53TfPBrI" frameborder="0"></iframe>
 
-  <div class="notes-title sport sport-small" style="background-color: #5EB769;">My Notes</div>
+  <div class="notes-title sport sport-small">My Notes</div>
   <div class="notes-box">
     <p class="finn-notes">
       So, one of my top games of the year's soundtrack is making this list, so I'm likely showing my bias. Machinarium is one of my favourite games of all time however, so Amanita Design's latest definitely struck a nerve for me.

@@ -4,10 +4,10 @@
 
   <iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/d7b2NdNewFI" frameborder="0"></iframe>
 
-  <div class="notes-title sport sport-small" style="background-color: #E92638;">My Notes</div>
+  <div class="notes-title sport sport-small">My Notes</div>
   <div class="notes-box">
     <p class="finn-notes">
-      Twin Peaks is almost too easy a tribute-concept to work from. Almost. Unless you have pipes like Jamie Stewart's.
+      Twin Peaks is almost too easy a tribute-concept to work from. Unless you have pipes like Jamie Stewart's. Then all bets are off.
     </p>
   </div>
 

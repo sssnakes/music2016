@@ -18,18 +18,18 @@
 <div id="container">
 
   <div id="site-intro-container">
-    <a href="www.finnanbarry.com" class="site-intro-title-1 sport">finnanbarry.com</a>
-    <p class="site-intro-title-2 sport">/music/2016</p>
-
     <div id="site-intro-close">
       <svg style="height: 50px;" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-      	 viewBox="0 0 33.769 33.77" enable-background="new 0 0 33.769 33.77" xml:space="preserve">
+         viewBox="0 0 33.769 33.77" enable-background="new 0 0 33.769 33.77" xml:space="preserve">
         <g>
-        	<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="2.399" y1="2.825" x2="30.714" y2="31.141"/>
-        	<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="30.714" y1="2.825" x2="2.399" y2="31.141"/>
+          <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="2.399" y1="2.825" x2="30.714" y2="31.141"/>
+          <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="30.714" y1="2.825" x2="2.399" y2="31.141"/>
         </g>
       </svg>
     </div>
+
+    <a href="www.finnanbarry.com" class="site-intro-title-1 sport">finnanbarry.com</a>
+    <p class="site-intro-title-2 sport">/music/2016</p>
 
     <div class="intro-text-container">
       <div class="intro-text">
@@ -82,8 +82,10 @@
 
       </div>
 
-      <div id="intro-button-main" class="intro-button sport sport-small">Info</div>
-      <div id="intro-button-side" class="intro-button sport sport-small">rmation</div>
+      <div class="intro-box">
+        <div id="intro-button-main" class="intro-button sport sport-small">Info</div>
+        <div id="intro-button-side" class="intro-button sport sport-small">rmation</div>
+      </div>
 
     </div>
 
@@ -96,13 +98,10 @@
             <div id="cover1" class="cover cover-albums">
               <p class="cover-text-top sport">Music 2016</p>
 
-              <svg width="100%" height="100%">
-                 <circle cx="50%" cy="50%" r="30%" stroke="#000" stroke-width="2" fill="none"></circle>
-              </svg>
-
-              <svg width="100%" height="100%">
-                 <circle cx="50%" cy="50%" r="1%" stroke="#000" stroke-width="2" fill="none"></circle>
-              </svg>
+                <div class="cover-img">
+                  <?php include('./vect/php/best.php'); ?>
+                  <!-- <img src="./vect/best.svg" /> -->
+                </div>
 
               <p class="cover-text-bottom sport">Top Albums</p>
             </div>
@@ -125,13 +124,9 @@
             <div id="cover2" class="cover cover-albums">
               <p class="cover-text-top sport">Music 2016</p>
 
-              <svg width="100%" height="100%">
-                 <circle cx="50%" cy="50%" r="20%" stroke="#000" stroke-width="2" fill="none"></circle>
-              </svg>
-
-              <svg width="100%" height="100%">
-                 <circle cx="50%" cy="50%" r="1%" stroke="#000" stroke-width="2" fill="none"></circle>
-              </svg>
+              <div class="cover-img">
+                <?php include('./vect/php/honor.php'); ?>
+              </div>
 
               <p class="cover-text-bottom sport">Honorable Mentions</p>
             </div>
@@ -183,23 +178,9 @@
             <div id="cover4" class="cover cover-albums">
               <p class="cover-text-top sport">Music 2016</p>
 
-              <svg class="svg-revist" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                 viewBox="0 0 650 650" enable-background="new 0 0 650 650" xml:space="preserve">
-              <g>
-                <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M325,34.57
-                  c166.593,0,301.643,43.838,301.643,97.916S491.593,230.402,325,230.402S23.357,203.533,23.357,170.389S158.407,110.376,325,110.376
-                  s301.643,43.838,301.643,97.916S491.593,306.207,325,306.207S23.357,279.339,23.357,246.194S158.407,186.182,325,186.182
-                  s301.643,43.838,301.643,97.916S491.593,382.013,325,382.013S23.357,355.144,23.357,322S158.407,261.987,325,261.987
-                  s301.643,43.838,301.643,97.916S491.593,457.818,325,457.818S23.357,430.95,23.357,397.806S158.407,337.793,325,337.793
-                  s301.643,43.838,301.643,97.916S491.593,533.624,325,533.624S23.357,506.755,23.357,473.611S158.407,413.598,325,413.598
-                  s301.643,43.838,301.643,97.916S491.593,609.43,325,609.43"/>
-              </g>
-              <ellipse fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="325" cy="170.389" rx="16.881" ry="3.359"/>
-              <ellipse fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="325" cy="473.611" rx="16.881" ry="3.359"/>
-              <ellipse fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="325" cy="397.806" rx="16.881" ry="3.359"/>
-              <ellipse fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="325" cy="322" rx="16.881" ry="3.359"/>
-              <ellipse fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="325" cy="246.194" rx="16.881" ry="3.359"/>
-              <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="325" y1="82.616" x2="325" y2="561.384"/>
+              <div class="cover-img">
+                <?php include('./vect/php/revisit.php'); ?>
+              </div>
 
               <p class="cover-text-bottom sport">Revisits</p>
             </div>
@@ -218,15 +199,14 @@
           </div>
 
           <div class="list-end">
-              <svg class="end-star" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-              	 viewBox="0 0 33.769 39.917" enable-background="new 0 0 33.769 39.917" xml:space="preserve">
+              <svg class="end-star" x="0px" y="0px" viewBox="0 0 33.769 39.917" enable-background="new 0 0 33.769 39.917" xml:space="preserve">
               <g>
               	<g>
               		<defs>
-              			<rect id="SVGID_1_" x="0.551" y="1.102" width="32.667" height="38.458"/>
+              			<rect x="0.551" y="1.102" width="32.667" height="38.458"/>
               		</defs>
-              		<clipPath id="SVGID_2_">
-              			<use xlink:href="#SVGID_1_"  overflow="visible"/>
+              		<clipPath>
+              			<use overflow="visible"/>
               		</clipPath>
               		<path clip-path="url(#SVGID_2_)" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M1.07,29.945
               			l31.627-19.229 M1.07,10.716l31.627,19.229 M16.883,1.102V39.56"/>
@@ -238,7 +218,7 @@
       </div> <!-- END OF CONTAINER -->
 
       <div id="info-slide">
-        <?php include('./music/xiuxiu.php'); ?>
+        <?php include('./music/being.php'); ?>
       </div>
 
     </div>
@@ -246,21 +226,9 @@
 
 <!-- ALBUM ARTS -->
 
-<img id="xiuxiu" src="./imgs/best/xiuxiu.jpg" class="mouse-hovered art">
-<img id="badbad" src="./imgs/best/badbad.jpg" class="mouse-hovered art">
-<img id="cantu" src="./imgs/best/cantu.jpg" class="mouse-hovered art">
-<img id="being" src="./imgs/best/being.jpg" class="mouse-hovered art">
-<img id="liima" src="./imgs/best/liima.jpg" class="mouse-hovered art">
-<img id="street" src="./imgs/best/street.jpg" class="mouse-hovered art">
-<img id="floex" src="./imgs/best/floex.jpg" class="mouse-hovered art">
-
-<img id="ava" src="./imgs/honorable/ava.jpg" class="mouse-hovered art">
-<img id="cas" src="./imgs/honorable/cas.jpg" class="mouse-hovered art">
-<img id="mat" src="./imgs/honorable/mat.jpg" class="mouse-hovered art">
-<img id="cfc" src="./imgs/honorable/cfc.jpg" class="mouse-hovered art">
-<img id="nin" src="./imgs/honorable/nin.jpg" class="mouse-hovered art">
-<img id="dgr" src="./imgs/honorable/dgr.jpg" class="mouse-hovered art">
-<img id="mam" src="./imgs/honorable/mam.jpg" class="mouse-hovered art">
+<div id="albums">
+  <?php include('./music/albums/albumlist.php'); ?>
+</div>
 
 </body>
 </html>

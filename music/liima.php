@@ -4,7 +4,7 @@
 
   <iframe class="youtube" width="560" height="315" src="http://www.youtube.com/embed/be-C5A80oSs" frameborder="0"></iframe>
 
-  <div class="notes-title sport sport-small" style="background-color: #27DA3F;">My Notes</div>
+  <div class="notes-title sport sport-small">My Notes</div>
   <div class="notes-box">
     <p class="finn-notes">
       Efterklang's one of my all time favourite bands, and easily one of the best to see live, so I was extatic to hear this side project from them with Tatu Rönkkö.

@@ -4,7 +4,7 @@
 
   <iframe class="youtube" width="560" height="315" src="http://www.youtube.com/embed/xEDdyjqz_ds" frameborder="0"></iframe>
 
-  <div class="notes-title sport sport-small" style="background-color: #5F9CCE;">My Notes</div>
+  <div class="notes-title sport sport-small">My Notes</div>
   <div class="notes-box">
     <p class="finn-notes">
       Badbadnotgood can seem to do no wrong. Their darker, moodier Boiler Room Basement set still goes into heavy rotation for me, and this project's got a great mix of old and new styles for them.

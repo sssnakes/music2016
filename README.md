@@ -68,3 +68,6 @@ Moving my local directories around to be able to use localhost with MAMP, I near
 
 ### 0.25
 Just a handful of minor updates. Ajax script seems to have been fixed by just adding a slight .delay() ¯\_(ツ)_/¯.
+
+### 0.26
+Mostly refinements in this update for now. Compressed a few of the SVGs into PHP includes and reworked a few of the underlying CSS issues. Still want to refine the flex box issue with SVG images however to better fit into their surrounding divs. 

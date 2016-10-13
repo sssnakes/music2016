@@ -4,7 +4,7 @@
 
   <iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/dK2lY8VXw-o" frameborder="0"></iframe>
 
-  <div class="notes-title sport sport-small" style="background-color: #76517A;">My Notes</div>
+  <div class="notes-title sport sport-small">My Notes</div>
   <div class="notes-box">
     <p class="finn-notes">
       Sweet experimental ambient from Cantu-Ledesma. I'm a sucker for albums with an 'aural diary' concept.

@@ -165,6 +165,8 @@ ol{
   display: inline-block;
   z-index: 10;
   position: absolute;
+  overflow: scroll;
+  padding-right: 20px;
 }
 
 .list-end{
@@ -173,12 +175,6 @@ ol{
   margin: 100px auto;
   box-sizing: border-box;
   position: relative;
-}
-.svg-revist{
-  height: 75%;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%);
 }
 .end-star{
   height: 100%;
@@ -201,15 +197,26 @@ ol{
 .info-slide-container{
   display: none;
 }
-.intro-button{
+.intro-box{
   width: 100%;
   height: 10vh;
+  position: relative;
+}
+.intro-button{
   display: inline-block;
   position: absolute;
   text-transform: uppercase;
-  padding: 36px 36px 36px 46px;
   box-sizing: border-box;
   cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 14px;
+}
+#intro-button-main{
+  left: 28px;
+}
+#intro-button-side{
+  left: 136px;
 }
 .info-title{
   margin: 10px 0 0 0;
@@ -227,6 +234,7 @@ ol{
   left: 15px;
   padding: 0 5px;
   text-transform: uppercase;
+  background-color: #2F51D7;
 }
 .finn-notes{
   color: #fff;
@@ -254,13 +262,6 @@ ol{
 .boring-right li{
   font-family: 'Sport', sans-serif;
 }
-
-
-.list-master-container{
-  height: 100vh;
-  overflow: scroll;
-  position: absolute;
-}
 .track-list{
 }
 .track-list ol{
@@ -285,18 +286,29 @@ ol{
 .track-list ol li:active{
   color: #FEFECD;
 }
-
+.svg-fit{
+  flex: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 80%;
+}
+.cover-img{
+  /*background: red;*/
+  flex: 1;
+}
 .cover-albums{
   height: 100vh;
-  position: relative;
+  /*position: relative;*/
+  display: flex;
+  flex-direction: column;
 }
 .cover-albums p{
   text-align: center;
   font-size: 4em;
   text-transform: uppercase;
-  position: absolute;
+  /*position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%);*/
   width: 100%;
 }
 .cover-text-top{
@@ -327,8 +339,8 @@ img.mouse-hovered {
   z-index: 500;
   background-color: #FEFD38;
   width: 95vw;
-  min-height: 95vh;
-  bottom: -100%;
+  height: 95vh;
+  bottom: -120%;
   left: 50%;
   transform: translateX(-50%);
   box-shadow: 0px 0px 100px #000;
