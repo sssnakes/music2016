@@ -12,44 +12,66 @@
   <script src="js/jquery-ui.min.js"></script>
   <script type="text/javascript" src="./js/app.js"></script>
 
+  <!-- Opens all links in new tab -->
+  <base target="_blank">
+
 </head>
 <body>
 
 <div id="container">
 
   <div id="site-intro-container">
-    <div id="site-intro-close">
-      <svg style="height: 50px;" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-         viewBox="0 0 33.769 33.77" enable-background="new 0 0 33.769 33.77" xml:space="preserve">
-        <g>
-          <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="2.399" y1="2.825" x2="30.714" y2="31.141"/>
-          <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="30.714" y1="2.825" x2="2.399" y2="31.141"/>
-        </g>
-      </svg>
-    </div>
+    <div id="site-intro-real">
 
-    <a href="www.finnanbarry.com" class="site-intro-title-1 sport">finnanbarry.com</a>
-    <p class="site-intro-title-2 sport">/music/2016</p>
-
-    <div class="intro-text-container">
-      <div class="intro-text">
-        <p class="sport">25.11.1991</p>
-        <p>What a year! I took a year out to test the waters with freelancing whilst I learnt how to code (tough, but rewarding), travelled to Africa for the first time (Namibia, it was wonderful) and contemplated moving house a few times (didn’t; too stressy). I also made many new friends and tried my best to put myself out there more. It’s been a year of growth, I hope.
-        </br></br>
-        Last year I commemorated the year’s send-off with a bucketlist of my favourite album releases, whilst trying to flex my coding skills a bit to see how far I’ve come. It was rough...
-        </br></br>
-        Expect this year’s to be similarly raw and messy, as well as a little OTT as I try things for the sake of trying, but I hope you enjoy. Hit me up on Twitter and let me know some of yours, and thanks for stopping by.
-        </br></br>
-        - <a href="http://www.twitter.com/finnanbarry">@finnanbarry</a></p>
+      <div id="site-intro-close">
+        <svg style="height: 50px;" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+           viewBox="0 0 33.769 33.77" enable-background="new 0 0 33.769 33.77" xml:space="preserve">
+          <g>
+            <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="2.399" y1="2.825" x2="30.714" y2="31.141"/>
+            <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="30.714" y1="2.825" x2="2.399" y2="31.141"/>
+          </g>
+        </svg>
       </div>
 
-      <div class="intro-colophon">
-        <p class="sport">Colophon</p>
-        <p>
-        </br></br></p>
-      </div>
-    </div>
+      <a href="http://www.finnanbarry.com" class="site-intro-title-1 sport">finnanbarry.com</a>
+      <p class="site-intro-title-2 sport">/music/2016</p>
 
+      <div class="intro-text-container">
+        <div class="intro-text">
+          <p class="sport">25.11.1991</p>
+          <p>What a year! I took a year out to test the waters with freelancing whilst I learnt how to code (tough, but rewarding), travelled to Africa for the first time (Namibia, it was wonderful) and contemplated moving house a few times (didn’t; too stressy). I also made many new friends and tried my best to put myself out there more. It’s been a year of growth, I hope.
+          </br></br>
+          Last year I commemorated the year’s send-off with a bucketlist of my favourite album releases, whilst trying to flex my coding skills a bit to see how far I’ve come. It was rough...
+          </br></br>
+          Expect this year’s to be similarly raw and messy, as well as a little OTT as I try things for the sake of trying, but I hope you enjoy. Hit me up on Twitter and let me know some of yours, and thanks for stopping by.
+          </br></br>
+          - <a href="http://www.twitter.com/finnanbarry">@finnanbarry</a></p>
+        </div>
+
+        <div class="intro-colophon">
+          <p class="sport">Colophon</p>
+          <p>Fonts used:</p>
+          <ul>
+            <li><a href="http://www.velvetyne.fr/fonts/sporting-grotesque/">Sporting Grotesque</a></li>
+            <li><a href="https://fonts.google.com/specimen/Work+Sans/">Work Sans</a></li>
+          </ul>
+            </br>
+          <p>Plugins &amp; Dependancies:</p>
+          <ul>
+            <li><p><a href="https://jqueryui.com/">jQuery UI</a> - Mainly for .draggable().</p></li>
+            <li><p><a href="https://github.com/jquery/jquery-color">jquery.color.js</a> - For colour changes.</p></li>
+            <li><p><a href="http://jsfiddle.net/pTt5w/2/">This jsfiddle</a> - For the hover link images.</p></li>
+          </ul>
+            </br>
+          <p>Links:</p>
+          <ul>
+            <li><a href="https://github.com/sssnakes/music2016">Github Repo</a></li>
+            <li><a href="http://www.finnanbarry.com">finnanbarry.com</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
   </div>
 
     <div class="left-bar-container">
@@ -77,7 +99,7 @@
 
         <div id="scroll-t1" class="scroll-text sport">Top</br>Albums</div>
         <div id="scroll-t2" class="scroll-text sport">Honorable</br>Mentions</div>
-        <div id="scroll-t3" class="scroll-text sport">Top LPs &amp;</br>Singles</div>
+        <div id="scroll-t3" class="scroll-text sport">Tracks, LPs</br>&amp; Singles</div>
         <div id="scroll-t4" class="scroll-text sport">Revisits</div>
 
       </div>
@@ -100,22 +122,13 @@
 
                 <div class="cover-img">
                   <?php include('./vect/php/best.php'); ?>
-                  <!-- <img src="./vect/best.svg" /> -->
                 </div>
 
               <p class="cover-text-bottom sport">Top Albums</p>
             </div>
 
             <div class="track-list">
-              <ol>
-                <li class="list-link" data-bg="E92638" data-target="xiuxiu">Xiu Xiu - Plays Music from Twin Peaks </li>
-                <li class="list-link" data-bg="5F9CCE" data-target="badbad">Badbadnotgood - IV </li>
-                <li class="list-link" data-bg="3256D4" data-target="being">Hieroglyphic Being - The Disco's of Imhotep</li>
-                <li class="list-link" data-bg="27DA3F" data-target="liima">Liima - ii</li>
-                <li class="list-link" data-bg="76517A" data-target="cantu">Jefre Cantu-Ledesma - In Summer</li>
-                <li class="list-link" data-bg="656763" data-target="street">Street Sects - End Positon</li>
-                <li class="list-link" data-bg="5EB769" data-target="floex">Floex (Thomas Dvorak) - Samorost 3</li>
-              </ol>
+              <?php include('./music/list/best.php'); ?>
             </div>
           </div>
 
@@ -132,15 +145,7 @@
             </div>
 
             <div class="track-list">
-              <ol>
-                <li class="list-link" data-image-id="ava" data-bg="2F78B8">Avalanches - Wildflower</li>
-                <li class="list-link" data-image-id="cas" data-bg="FC5922">case/lang/veirs - case/lang/veirs</li>
-                <li class="list-link" data-image-id="mat" data-bg="76D47A">Matmos - Ultimate Care II</li>
-                <li class="list-link" data-image-id="cfc" data-bg="66A0A8">CFCF - On Vacation</li>
-                <li class="list-link" data-image-id="nin" data-bg="CE5788">Carlos Nino &amp; Friends - Flutes, Echos, It's All Happening!</li>
-                <li class="list-link" data-image-id="dgr" data-bg="C7D4CB">Death Grips - Bottomless Pit</li>
-                <li class="list-link" data-image-id="mam" data-bg="E2C08D">Mammal Hands - Floa</li>
-              </ol>
+              <?php include('./music/list/honor.php'); ?>
             </div>
           </div>
 
@@ -149,27 +154,18 @@
             <div id="cover3" class="cover cover-albums">
               <p class="cover-text-top sport">Music 2016</p>
 
-              <svg width="100%" height="100%">
-                 <circle cx="50%" cy="50%" r="20%" stroke="#000" stroke-width="2" fill="none"></circle>
-              </svg>
+              <div class="cover-img">
+                <svg class="svg-fit" x="0px" y="0px" viewBox="0 0 650 650">
+                	<circle fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="325" cy="325" r="157.209"/>
+                	<circle fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="325" cy="325" r="7.5"/>
+                </svg>
+              </div>
 
-              <svg width="100%" height="100%">
-                 <circle cx="50%" cy="50%" r="1%" stroke="#000" stroke-width="2" fill="none"></circle>
-              </svg>
-
-              <p class="cover-text-bottom sport">Top LPs &amp; Singles</p>
+              <p class="cover-text-bottom sport">Singles &amp; LPs</p>
             </div>
 
             <div class="track-list">
-              <ol>
-                <li class="list-link" data-image-id="ava" data-bg="2F78B8">Avalanches - Wildflower</li>
-                <li class="list-link" data-image-id="cas" data-bg="FC5922">case/lang/veirs - case/lang/veirs</li>
-                <li class="list-link" data-image-id="mat" data-bg="76D47A">Matmos - Ultimate Care II</li>
-                <li class="list-link" data-image-id="cfc" data-bg="66A0A8">CFCF - On Vacation</li>
-                <li class="list-link" data-image-id="nin" data-bg="CE5788">Carlos Nino &amp; Friends - Flutes, Echos, It's All Happening!</li>
-                <li class="list-link" data-image-id="dgr" data-bg="C7D4CB">Death Grips - Bottomless Pit</li>
-                <li class="list-link" data-image-id="mam" data-bg="E2C08D">Mammal Hands - Floa</li>
-              </ol>
+              <?php include('./music/list/singles.php'); ?>
             </div>
           </div>
 
@@ -186,15 +182,7 @@
             </div>
 
             <div class="track-list">
-              <ol>
-                <li class="list-link" data-image-id="ava" data-bg="2F78B8">Avalanches - Wildflower</li>
-                <li class="list-link" data-image-id="cas" data-bg="FC5922">case/lang/veirs - case/lang/veirs</li>
-                <li class="list-link" data-image-id="mat" data-bg="76D47A">Matmos - Ultimate Care II</li>
-                <li class="list-link" data-image-id="cfc" data-bg="66A0A8">CFCF - On Vacation</li>
-                <li class="list-link" data-image-id="nin" data-bg="CE5788">Carlos Nino &amp; Friends - Flutes, Echos, It's All Happening!</li>
-                <li class="list-link" data-image-id="dgr" data-bg="C7D4CB">Death Grips - Bottomless Pit</li>
-                <li class="list-link" data-image-id="mam" data-bg="E2C08D">Mammal Hands - Floa</li>
-              </ol>
+              <?php include('./music/list/revisit.php'); ?>
             </div>
           </div>
 
@@ -218,7 +206,7 @@
       </div> <!-- END OF CONTAINER -->
 
       <div id="info-slide">
-        <?php include('./music/being.php'); ?>
+        <?php include('./music/info/being.php'); ?>
       </div>
 
     </div>

@@ -14,3 +14,9 @@
 	</g>
 </g>
 </svg>
+
+
+<svg class="svg-fit" x="0px" y="0px" viewBox="0 0 650 650">
+	<circle fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="325" cy="325" r="157.209"/>
+	<circle fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="325" cy="325" r="7.5"/>
+</svg>

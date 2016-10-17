@@ -70,4 +70,7 @@ Moving my local directories around to be able to use localhost with MAMP, I near
 Just a handful of minor updates. Ajax script seems to have been fixed by just adding a slight .delay() ¯\_(ツ)_/¯.
 
 ### 0.26
-Mostly refinements in this update for now. Compressed a few of the SVGs into PHP includes and reworked a few of the underlying CSS issues. Still want to refine the flex box issue with SVG images however to better fit into their surrounding divs. 
+Mostly refinements in this update for now. Compressed a few of the SVGs into PHP includes and reworked a few of the underlying CSS issues. Still want to refine the flex box issue with SVG images however to better fit into their surrounding divs.
+
+### 0.27
+Christ, that took a while. Working out how to learn how it works/ apply it to this project and work with AJAX calls with the KirbyCMS all at once was a bit too much of an undertaking, and I feel as though I’m spending too much time on this as it is. So I instead added each page individually as a PHP page and added the correct content for each. Took some time, but the site is in a 95% working state to the untrained eye. Just some minor bug fixing now before going back and figuring out this CMS deal.

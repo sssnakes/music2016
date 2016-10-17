@@ -13,6 +13,7 @@
   padding: 0;
   font-family:  'Work', Arial, sans-serif;
   font-size: 20px;
+  letter-spacing: .4px;
 }
 html{
   background-color: #FFFD38;
@@ -181,6 +182,15 @@ ol{
   left: 50%;
   transform: translateX(-50%);
 }
+.info-end{
+  width: 100%;
+  padding: 0 0 30px 0;
+}
+.info-star{
+  height: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
 /*INFO SLIDE CSS*/
 #info-slide{
@@ -243,21 +253,27 @@ ol{
   background-color: none;
   box-shadow: 0px 0px 10px #000;
 }
+.finn-notes a{
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+}
+.finn-notes a:hover{
+  border-bottom: none;
+  cursor: pointer;
+}
 .boring-container{
   width: 100%;
-  background-color: red;
   margin: 50px 0;
   line-height: 1.6;
 }
 .boring-left{
   width: 22%;
   display: inline-block;
-  float: left;
 }
 .boring-right{
   width: 60%;
   display: inline-block;
-  float: left;
 }
 .boring-right li{
   font-family: 'Sport', sans-serif;
@@ -310,6 +326,7 @@ ol{
   left: 50%;
   transform: translateX(-50%);*/
   width: 100%;
+  padding: 15px 0;
 }
 .cover-text-top{
   top: 20px;
@@ -333,19 +350,26 @@ img.mouse-hovered {
 }
 
 
-
 #site-intro-container{
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+  bottom: -120%;
   position: absolute;
   z-index: 500;
+  /*background-color: red;*/
+}
+#site-intro-real{
   background-color: #FEFD38;
   width: 95vw;
-  height: 95vh;
-  bottom: -120%;
-  left: 50%;
-  transform: translateX(-50%);
+  height: auto;
   box-shadow: 0px 0px 100px #000;
   box-sizing: border-box;
   padding: 60px;
+  left: 50%;
+  top: 100px;
+  transform: translateX(-50%);
+  position: absolute;
 }
 .site-intro-title-1{
   -webkit-text-stroke-width: 1px;
@@ -370,7 +394,7 @@ img.mouse-hovered {
   width: 50px;
   height: 50px;
   float: right;
-  transition: .4s;
+  transition: .6s;
   cursor: pointer;
 }
 #site-intro-close:hover{
@@ -379,6 +403,9 @@ img.mouse-hovered {
 .intro-text-container{
   width: 80%;
   margin: 80px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .intro-text-container p{
   font-size: 1em;
@@ -386,6 +413,7 @@ img.mouse-hovered {
 .intro-text-container p.sport{
   font-size: 1em;
   margin: 0 0 25px 0;
+  text-transform: uppercase;
 }
 .intro-text-container p a{
   color: #000;
@@ -396,9 +424,24 @@ img.mouse-hovered {
 }
 .intro-text{
   width: 50%;
-  float: left;
+  display: inline-block;
 }
 .intro-colophon{
   width: 40%;
-  float: right;
+  display: inline-block;
+}
+.intro-colophon a{
+  color: #000;
+}
+.intro-colophon a:hover{
+  text-decoration: none;
+}
+.intro-colophon ul{
+  padding-left: 22px;
+}
+.intro-colophon ul a{
+  padding-right: 8px;
+}
+.intro-colophon ul p{
+  display: inline-block;
 }

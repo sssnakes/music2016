@@ -23,6 +23,27 @@ $(document).ready(function() {
     r3 = $('#row3').height();
   };
 
+  // SCROLL BUTTONS
+  $("#scroll-t1").click(function() {
+      $('.list-master-container').animate({ scrollTop: 0 }, 400);
+  });
+  $("#scroll-t2").click(function() {
+      r1 = $('#row1').height();
+      $('.list-master-container').animate({ scrollTop: r1 }, 400);
+      console.log(r1);
+  });
+  $("#scroll-t3").click(function() {
+      r1 = $('#row1').height(),
+      r2 = $('#row2').height(),
+      $('.list-master-container').animate({ scrollTop: r1 + r2 }, 400);
+  });
+  $("#scroll-t4").click(function() {
+      r1 = $('#row1').height(),
+      r2 = $('#row2').height(),
+      r3 = $('#row3').height();
+      $('.list-master-container').animate({ scrollTop: r1 + r2 + r3 }, 400);
+  });
+
   // HOVER SLIDE, LEFT CONTAINER
   $('.left-bar-container').mouseenter(function() {
     set  = (winWid - (900 + (winWid * 0.70)));
@@ -171,20 +192,6 @@ $(document).ready(function() {
 
   });
 
-  // SCROLL BUTTONS
-  $("#scroll-t1").click(function() {
-      $('.list-master-container').animate({ scrollTop: 0 }, 400);
-  });
-  $("#scroll-t2").click(function() {
-      $('.list-master-container').animate({ scrollTop: r1 }, 400);
-  });
-  $("#scroll-t3").click(function() {
-      $('.list-master-container').animate({ scrollTop: r1 + r2 }, 400);
-  });
-  $("#scroll-t4").click(function() {
-      $('.list-master-container').animate({ scrollTop: r1 + r2 + r3 }, 400);
-  });
-
   // BUTTON HIGHLIGHT
   $('.scroll-button').mouseenter(function() {
     $(this).find('.scroll-dot').css('background-color', '#000');
@@ -227,7 +234,7 @@ $(document).ready(function() {
       $(this).hide();
       var container = $('#info-slide'),
           target = $this.data('target');
-          container.load('./music/' + target + '.php', function(){
+          container.load('./music/info/' + target + '.php', function(){
 
             $('.notes-title').css('background-color', ('#' + bg));
             $('.info-slide-container').fadeIn();
