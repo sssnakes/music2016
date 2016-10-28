@@ -7,7 +7,7 @@
   <div class="notes-title sport sport-small">My Notes</div>
   <div class="notes-box">
     <p class="finn-notes">
-      <a href="https://en.wikipedia.org/wiki/Efterklang">Efterklang's</a> one of my all time favourite bands (<a href="https://en.wikipedia.org/wiki/Parades_(Efterklang_album)">Parades</a> in particular still holds a special place for me), and easily one of the best to see live, so I was extatic to hear this side project from them with Tatu Rönkkö.
+      <a href="https://en.wikipedia.org/wiki/Efterklang">Efterklang's</a> one of my all time favourite bands (<a href="https://en.wikipedia.org/wiki/Parades_(Efterklang_album)">Parades</a> in particular still holds a special place for me), and easily one of the best to see live, so I was ecstatic to hear this side project from them with Tatu Rönkkö.
       <br /><br />
       Great video for 'Russians' too.
     </p>

@@ -225,6 +225,7 @@ $(document).ready(function() {
   // AJAX CALL TO CHANGE INFO SLIDE
   $('.list-link').on('click', function(){
 
+    // AJAX FADE START
     var bg = $(this).data('bg'),
         $this = $(this);
     $('#info-slide').animate({ backgroundColor: ('#' + bg) }, 400);
@@ -236,11 +237,33 @@ $(document).ready(function() {
           target = $this.data('target');
           container.load('./music/info/' + target + '.php', function(){
 
+            $('.info-slide-container').css('background-color', ('#' + bg));
             $('.notes-title').css('background-color', ('#' + bg));
             $('.info-slide-container').fadeIn();
 
           });
     });
+    // FADE END
+
+    // // AJAX CASETTE SLIDE START
+    // var bg = $(this).data('bg'),
+    //     $this = $(this);
+    //
+    // $('.info-slide-container').animate({
+    //   right: -800
+    // }, 400, function(){
+    //   $('.info-slide-container').css('background-color', '#' + bg);
+    //   var container = $('.info-slide-container'),
+    //       target = $this.data('target');
+    //       container.load('./music/info/' + target + '.php', function(){
+    //         $('.notes-title').css('background-color', ('#' + bg));
+    //       });
+    // });
+    //
+    // $('.info-slide-container').delay(500).animate({
+    //   right: 0
+    // }, 400);
+    // // CASETTE END
 
   });
 

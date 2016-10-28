@@ -86,11 +86,6 @@
           </div>
         </div>
 
-        <div id="scroll-1" class="scroll-button"></div>
-        <div id="scroll-2" class="scroll-button"></div>
-        <div id="scroll-3" class="scroll-button"></div>
-        <div id="scroll-4" class="scroll-button"></div>
-
         <div id="dot-1" class="scroll-dot"></div>
         <div id="dot-2" class="scroll-dot"></div>
         <div id="dot-3" class="scroll-dot"></div>

@@ -74,3 +74,6 @@ Mostly refinements in this update for now. Compressed a few of the SVGs into PHP
 
 ### 0.27
 Christ, that took a while. Working out how to learn how it works/ apply it to this project and work with AJAX calls with the KirbyCMS all at once was a bit too much of an undertaking, and I feel as though I’m spending too much time on this as it is. So I instead added each page individually as a PHP page and added the correct content for each. Took some time, but the site is in a 95% working state to the untrained eye. Just some minor bug fixing now before going back and figuring out this CMS deal.
+
+### 0.28
+Added a “cassette drive” sliding function at the bottom of the app.js file. It works if swapped out for the current fade function, but I don’t think I like it as much… Good to keep however.

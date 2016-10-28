@@ -7,7 +7,7 @@
   <div class="notes-title sport sport-small">My Notes</div>
   <div class="notes-box">
     <p class="finn-notes">
-      I'll admit, I was a little underwhelmed with <a href="https://en.wikipedia.org/wiki/Hyper_Light_Drifter">Hyper Light Drifter</a>. It looks amazing, and played quite well, but I've definitely been spoiled for ruined-world, post-narrative worldbuilding by the <a href="https://en.wikipedia.org/wiki/Dark_Souls">From Software titles</a>. The overly-ambiguous history and simplified narrative style of HLD just didn't suit the setting for me.
+      I'll admit, I was a little underwhelmed with <a href="https://en.wikipedia.org/wiki/Hyper_Light_Drifter">Hyper Light Drifter</a>. It looks amazing, and played quite well, but I've definitely been spoiled for ruined-world, post-narrative worldbuilding by the <a href="https://en.wikipedia.org/wiki/Dark_Souls">From Software titles</a>. It's a fine line between leading the player's interest and being overly ambiguous.
       </br></br>
       Soundtrack was solid however, more of Disasterpeace is always good.
     </p>
