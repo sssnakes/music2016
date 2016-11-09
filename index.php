@@ -115,11 +115,12 @@
             <div id="cover1" class="cover cover-albums">
               <p class="cover-text-top sport">Music 2016</p>
 
-                <div class="cover-img">
-                  <?php include('./vect/php/best.php'); ?>
+                <div class="cover-img cover-img-1">
+                  <!-- <div class="cover-img-1"></div> -->
                 </div>
 
               <p class="cover-text-bottom sport">Top Albums</p>
+              <div class="down-arrow"></div>
             </div>
 
             <div class="track-list">

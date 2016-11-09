@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 22.74 16.214" enable-background="new 0 0 22.74 16.214" xml:space="preserve">
+<g>
+	<g>
+		<g>
+			<path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M1.787,7.703l9.731,5.917l9.731-5.917
+				 M11.518,1.787v11.546"/>
+		</g>
+	</g>
+</g>
+<circle fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="612.308" cy="200" r="176.88"/>
+<circle fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="612.308" cy="200" r="4.615"/>
+<g>
+	<g>
+		<g>
+			<defs>
+				<rect id="SVGID_1_" x="672.569" y="145.578" width="20.103" height="23.666"/>
+			</defs>
+			<clipPath id="SVGID_2_">
+				<use xlink:href="#SVGID_1_"  overflow="visible"/>
+			</clipPath>
+			<path clip-path="url(#SVGID_2_)" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M672.889,163.329
+				l19.463-11.833 M672.889,151.495l19.463,11.833 M682.62,145.579v23.666"/>
+		</g>
+	</g>
+</g>
+<circle fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="1024.615" cy="200" r="96.744"/>
+<circle fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="1024.615" cy="200" r="4.615"/>
+<g>
+	<path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M1436.923,23.12
+		c102.519,0,185.627,26.977,185.627,60.256s-83.108,60.256-185.627,60.256s-185.626-16.535-185.626-36.931
+		s83.108-36.931,185.626-36.931s185.627,26.977,185.627,60.256s-83.108,60.255-185.627,60.255s-185.626-16.534-185.626-36.931
+		s83.108-36.93,185.626-36.93s185.627,26.977,185.627,60.256s-83.108,60.255-185.627,60.255S1251.297,220.396,1251.297,200
+		s83.108-36.931,185.626-36.931s185.627,26.977,185.627,60.256s-83.108,60.255-185.627,60.255s-185.626-16.534-185.626-36.93
+		s83.108-36.931,185.626-36.931s185.627,26.977,185.627,60.256s-83.108,60.255-185.627,60.255s-185.626-16.535-185.626-36.931
+		c0-20.396,83.108-36.931,185.626-36.931s185.627,26.977,185.627,60.256s-83.108,60.256-185.627,60.256"/>
+</g>
+<ellipse fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="1436.923" cy="106.701" rx="10.388" ry="2.067"/>
+<ellipse fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="1436.923" cy="293.299" rx="10.388" ry="2.067"/>
+<ellipse fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="1436.923" cy="246.65" rx="10.388" ry="2.067"/>
+<ellipse fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="1436.923" cy="200" rx="10.388" ry="2.067"/>
+<ellipse fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="1436.923" cy="153.35" rx="10.388" ry="2.067"/>
+<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="1436.923" y1="52.687" x2="1436.923" y2="347.313"/>
+</svg>

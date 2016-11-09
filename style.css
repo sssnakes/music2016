@@ -311,10 +311,27 @@ ol{
   transform: translateX(-50%);
   height: 80%;
 }
+.down-arrow{
+  background: url('./vect/down-arrow.svg') center no-repeat;
+  height: 2vh;
+  margin: 0 0 2vh 0;
+}
 .cover-img{
   /*background: red;*/
   flex: 1;
 }
+.cover-img-1{
+  background: url('./vect/best.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: spin-1 14s infinite;
+  /*transform: rotateX(30deg);*/
+}
+@keyframes spin-1 {
+    0%   { transform: rotateY(0deg) rotateX(30deg); }
+    100% { transform: rotateY(360deg) rotateX(30deg); }
+}
+
 .cover-albums{
   height: 100vh;
   /*position: relative;*/

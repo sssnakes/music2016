@@ -152,10 +152,6 @@ $(document).ready(function() {
         w  = $(window).height();
         u  = t - w;
 
-        // r1 = $('#row1').height(),
-        // r2 = $('#row2').height(),
-        // r3 = $('#row3').height();
-        // END DIS
         y  = t - (r1 + r2 + r3);
         if (y < 0){ y = 0; };
         a  = (l - (r1 + r2 + r3)) - w;
@@ -229,7 +225,6 @@ $(document).ready(function() {
     var bg = $(this).data('bg'),
         $this = $(this);
     $('#info-slide').animate({ backgroundColor: ('#' + bg) }, 400);
-    $('.notes-title').animate({ backgroundColor: ('#' + bg) }, 400);
 
     $('.info-slide-container').fadeOut().delay( 1200, function(){
       $(this).hide();
